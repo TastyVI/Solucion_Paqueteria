@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.UI", "Paqueteria.UI\Paqueteria.UI.csproj", "{157C32F2-C247-4EE3-9D5C-2D204C75BBFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paqueteria.UI", "Paqueteria.UI\Paqueteria.UI.csproj", "{157C32F2-C247-4EE3-9D5C-2D204C75BBFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.DLL", "Paqueteria.DLL\Paqueteria.DLL.csproj", "{1D310781-F7C9-4965-9F45-A31BF6FDD914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paqueteria.DLL", "Paqueteria.DLL\Paqueteria.DLL.csproj", "{1D310781-F7C9-4965-9F45-A31BF6FDD914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.DB", "Paqueteria.DB\Paqueteria.DB.csproj", "{BE1C9750-C86F-42FC-A52B-AA751BB04144}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paqueteria.DB", "Paqueteria.DB\Paqueteria.DB.csproj", "{BE1C9750-C86F-42FC-A52B-AA751BB04144}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.UC", "Paqueteria.UC\Paqueteria.UC.csproj", "{2D720AE3-BDF3-49C6-AFCE-B0140CC6A109}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paqueteria.UC", "Paqueteria.UC\Paqueteria.UC.csproj", "{2D720AE3-BDF3-49C6-AFCE-B0140CC6A109}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "frmInicioSesion", "frmInicioSesion\frmInicioSesion.csproj", "{1170C901-D249-4750-996D-620049280DA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2D720AE3-BDF3-49C6-AFCE-B0140CC6A109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D720AE3-BDF3-49C6-AFCE-B0140CC6A109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D720AE3-BDF3-49C6-AFCE-B0140CC6A109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1170C901-D249-4750-996D-620049280DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1170C901-D249-4750-996D-620049280DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1170C901-D249-4750-996D-620049280DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1170C901-D249-4750-996D-620049280DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
