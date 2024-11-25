@@ -38,11 +38,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(283, 36);
+            pictureBox1.Location = new Point(359, 43);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 62);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // listBox1
             // 

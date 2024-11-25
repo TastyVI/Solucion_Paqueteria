@@ -39,7 +39,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(207, 142);
+            dataGridView1.Location = new Point(200, 135);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(372, 203);
@@ -64,11 +64,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(334, 60);
+            pictureBox1.Location = new Point(321, 48);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 62);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // frmRegistroPaqueteDevolucion
             // 
