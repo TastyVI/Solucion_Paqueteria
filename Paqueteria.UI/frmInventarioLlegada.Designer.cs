@@ -28,43 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            textBox1 = new TextBox();
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            textBox3 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(157, 92);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "FECHA";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(300, 148);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 29);
-            button2.TabIndex = 1;
-            button2.Text = "INVENTARIO";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(126, 148);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 2;
-            textBox1.Text = "NOMBRE";
             // 
             // listBox1
             // 
@@ -99,19 +73,40 @@
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(126, 105);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(125, 27);
+            textBox2.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(126, 150);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(300, 150);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(125, 27);
+            textBox3.TabIndex = 9;
+            // 
             // frmInventarioLlegada
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox3);
+            Controls.Add(textBox1);
+            Controls.Add(textBox2);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
             Controls.Add(listBox1);
-            Controls.Add(textBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Name = "frmInventarioLlegada";
             Text = "frmInventarioLlegada";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -122,13 +117,12 @@
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private TextBox textBox1;
         private ListBox listBox1;
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private TextBox textBox3;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Paqueteria.UI
 {
-    public partial class frmPaquetes : Form
+    public partial class frmAgregarPaquetes : Form
     {
-        public frmPaquetes()
+        public frmAgregarPaquetes()
         {
             InitializeComponent();
         }

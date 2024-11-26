@@ -1,6 +1,6 @@
 ﻿namespace Paqueteria.UI
 {
-    partial class frmPaquetes
+    partial class frmAgregarPaquetes
     {
         /// <summary>
         /// Required designer variable.
@@ -114,11 +114,11 @@
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
             // 
-            // frmPaquetes
+            // frmAgregarPaquetes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(dataGridView1);
@@ -128,7 +128,7 @@
             Controls.Add(textBox1);
             Controls.Add(textBox2);
             Controls.Add(pictureBox1);
-            Name = "frmPaquetes";
+            Name = "frmAgregarPaquetes";
             Text = "frmPaquete";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

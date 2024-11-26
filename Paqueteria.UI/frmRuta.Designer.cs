@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             listBox2 = new ListBox();
             button1 = new Button();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -46,16 +46,6 @@
             textBox1.Size = new Size(203, 27);
             textBox1.TabIndex = 6;
             textBox1.Text = "CANTIDAD";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.ActiveCaption;
-            textBox2.ForeColor = SystemColors.MenuBar;
-            textBox2.Location = new Point(77, 62);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(203, 27);
-            textBox2.TabIndex = 5;
-            textBox2.Text = "USUARIO CHOFER";
             // 
             // listBox1
             // 
@@ -91,18 +81,27 @@
             button1.Text = "AGREGAR";
             button1.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(77, 59);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(203, 28);
+            comboBox1.TabIndex = 11;
+            comboBox1.Text = "Usuario Chofer";
+            // 
             // frmRuta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(848, 450);
+            Controls.Add(comboBox1);
             Controls.Add(button1);
             Controls.Add(listBox2);
             Controls.Add(dataGridView1);
             Controls.Add(listBox1);
             Controls.Add(textBox1);
-            Controls.Add(textBox2);
             Name = "frmRuta";
             Text = "frmRuta";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -113,10 +112,10 @@
         #endregion
 
         private TextBox textBox1;
-        private TextBox textBox2;
         private ListBox listBox1;
         private DataGridView dataGridView1;
         private ListBox listBox2;
         private Button button1;
+        private ComboBox comboBox1;
     }
 }

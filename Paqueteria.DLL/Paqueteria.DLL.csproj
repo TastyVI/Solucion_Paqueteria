@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
-  </ItemGroup>
-
 </Project>
