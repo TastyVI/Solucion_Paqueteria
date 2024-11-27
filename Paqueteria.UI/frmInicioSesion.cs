@@ -60,6 +60,11 @@ namespace Paqueteria.UI
                 txtContraseña.UseSystemPasswordChar = false;
             }
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

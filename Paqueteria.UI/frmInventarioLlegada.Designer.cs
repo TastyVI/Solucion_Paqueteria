@@ -35,6 +35,7 @@
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             textBox3 = new TextBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -43,13 +44,14 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(126, 202);
+            listBox1.Location = new Point(192, 214);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(150, 184);
             listBox1.TabIndex = 3;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.SteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(371, 202);
             dataGridView1.Name = "dataGridView1";
@@ -75,24 +77,33 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(126, 105);
+            textBox2.Location = new Point(192, 117);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 7;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(126, 150);
+            textBox1.Location = new Point(192, 162);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 8;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(300, 150);
+            textBox3.Location = new Point(426, 162);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.SteelBlue;
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(161, 450);
+            panel1.TabIndex = 10;
             // 
             // frmInventarioLlegada
             // 
@@ -100,6 +111,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(textBox3);
             Controls.Add(textBox1);
             Controls.Add(textBox2);
@@ -124,5 +136,6 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private TextBox textBox3;
+        private Panel panel1;
     }
 }

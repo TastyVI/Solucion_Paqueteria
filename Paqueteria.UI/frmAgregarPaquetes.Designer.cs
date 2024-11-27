@@ -29,110 +29,191 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            textBox3 = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button2 = new Button();
-            button1 = new Button();
+            btnEliminar = new Button();
+            btnAgregar = new Button();
             dataGridView1 = new DataGridView();
             pictureBox2 = new PictureBox();
+            txtId = new TextBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            txtFecha = new TextBox();
+            txtUbicacion = new TextBox();
+            panel4 = new Panel();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(196, 52);
+            pictureBox1.Image = Properties.Resources.logo;
+            pictureBox1.Location = new Point(266, -19);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 62);
+            pictureBox1.Size = new Size(308, 140);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // textBox3
+            // btnEliminar
             // 
-            textBox3.BackColor = SystemColors.ActiveCaption;
-            textBox3.ForeColor = SystemColors.MenuBar;
-            textBox3.Location = new Point(105, 258);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(203, 27);
-            textBox3.TabIndex = 8;
-            textBox3.Text = "UBICACIÓN";
+            btnEliminar.Image = Properties.Resources.paneles;
+            btnEliminar.ImageAlign = ContentAlignment.TopCenter;
+            btnEliminar.Location = new Point(296, 337);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(122, 56);
+            btnEliminar.TabIndex = 10;
+            btnEliminar.Text = "ELIMINAR";
+            btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // btnAgregar
             // 
-            textBox1.BackColor = SystemColors.ActiveCaption;
-            textBox1.ForeColor = SystemColors.MenuBar;
-            textBox1.Location = new Point(105, 214);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(203, 27);
-            textBox1.TabIndex = 7;
-            textBox1.Text = "FECHA";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.ActiveCaption;
-            textBox2.ForeColor = SystemColors.MenuBar;
-            textBox2.Location = new Point(105, 167);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(203, 27);
-            textBox2.TabIndex = 6;
-            textBox2.Text = "ID";
-            // 
-            // button2
-            // 
-            button2.Location = new Point(227, 354);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 10;
-            button2.Text = "ELIMINAR";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(101, 354);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 9;
-            button1.Text = "AGREGAR";
-            button1.UseVisualStyleBackColor = true;
+            btnAgregar.Image = Properties.Resources.paneles;
+            btnAgregar.ImageAlign = ContentAlignment.TopCenter;
+            btnAgregar.Location = new Point(158, 337);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(122, 56);
+            btnAgregar.TabIndex = 9;
+            btnAgregar.Text = "AGREGAR";
+            btnAgregar.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.SteelBlue;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(345, 146);
+            dataGridView1.Location = new Point(445, 146);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(421, 188);
+            dataGridView1.Size = new Size(388, 247);
             dataGridView1.TabIndex = 11;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(596, 52);
+            pictureBox2.Location = new Point(648, 28);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(125, 62);
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
+            // 
+            // txtId
+            // 
+            txtId.BackColor = SystemColors.ButtonHighlight;
+            txtId.BorderStyle = BorderStyle.None;
+            txtId.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtId.ForeColor = Color.Gray;
+            txtId.Location = new Point(158, 158);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(260, 28);
+            txtId.TabIndex = 13;
+            txtId.Text = "ID";
+            txtId.Enter += txtId_Enter;
+            txtId.Leave += txtId_Leave;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(158, 190);
+            panel1.Margin = new Padding(1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(260, 1);
+            panel1.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ActiveCaptionText;
+            panel2.Location = new Point(158, 236);
+            panel2.Margin = new Padding(1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(260, 1);
+            panel2.TabIndex = 15;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.ActiveCaptionText;
+            panel3.Location = new Point(158, 288);
+            panel3.Margin = new Padding(1);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(260, 1);
+            panel3.TabIndex = 16;
+            // 
+            // txtFecha
+            // 
+            txtFecha.BackColor = SystemColors.ButtonHighlight;
+            txtFecha.BorderStyle = BorderStyle.None;
+            txtFecha.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFecha.ForeColor = Color.Gray;
+            txtFecha.Location = new Point(158, 204);
+            txtFecha.Name = "txtFecha";
+            txtFecha.Size = new Size(260, 28);
+            txtFecha.TabIndex = 17;
+            txtFecha.Text = "FECHA";
+            txtFecha.Enter += txtFecha_Enter;
+            txtFecha.Leave += txtFecha_Leave;
+            // 
+            // txtUbicacion
+            // 
+            txtUbicacion.BackColor = SystemColors.ButtonHighlight;
+            txtUbicacion.BorderStyle = BorderStyle.None;
+            txtUbicacion.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUbicacion.ForeColor = Color.Gray;
+            txtUbicacion.Location = new Point(158, 256);
+            txtUbicacion.Name = "txtUbicacion";
+            txtUbicacion.Size = new Size(260, 28);
+            txtUbicacion.TabIndex = 18;
+            txtUbicacion.Text = "UBICACIÓN";
+            txtUbicacion.Enter += txtUbicacion_Enter;
+            txtUbicacion.Leave += txtUbicacion_Leave;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.SteelBlue;
+            panel4.Controls.Add(pictureBox3);
+            panel4.Dock = DockStyle.Left;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(152, 450);
+            panel4.TabIndex = 19;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.agregarP;
+            pictureBox3.Location = new Point(12, 170);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(125, 119);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
             // 
             // frmAgregarPaquetes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(853, 450);
+            Controls.Add(panel4);
+            Controls.Add(txtUbicacion);
+            Controls.Add(txtFecha);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(txtId);
             Controls.Add(pictureBox2);
             Controls.Add(dataGridView1);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
-            Controls.Add(textBox2);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnAgregar);
             Controls.Add(pictureBox1);
             Name = "frmAgregarPaquetes";
             Text = "frmPaquete";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,12 +221,17 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private TextBox textBox3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button2;
-        private Button button1;
+        private Button btnEliminar;
+        private Button btnAgregar;
         private DataGridView dataGridView1;
         private PictureBox pictureBox2;
+        private TextBox txtId;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private TextBox txtFecha;
+        private TextBox txtUbicacion;
+        private Panel panel4;
+        private PictureBox pictureBox3;
     }
 }

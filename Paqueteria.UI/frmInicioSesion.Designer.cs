@@ -44,6 +44,7 @@
             // btnIniciarSesion
             // 
             btnIniciarSesion.Font = new Font("Tahoma", 13.8F);
+            btnIniciarSesion.Image = Properties.Resources.paneles;
             btnIniciarSesion.Location = new Point(298, 357);
             btnIniciarSesion.Name = "btnIniciarSesion";
             btnIniciarSesion.Size = new Size(278, 37);
@@ -63,6 +64,7 @@
             txtUsuario.Size = new Size(437, 28);
             txtUsuario.TabIndex = 1;
             txtUsuario.Text = "USUARIO";
+            txtUsuario.TextChanged += txtUsuario_TextChanged;
             txtUsuario.Enter += txtUsuario_Enter;
             txtUsuario.Leave += txtUsuario_Leave;
             // 
