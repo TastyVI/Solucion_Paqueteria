@@ -77,6 +77,8 @@
             txtContraseña.Size = new Size(434, 28);
             txtContraseña.TabIndex = 2;
             txtContraseña.Text = "CONTRASEÑA";
+            txtContraseña.Enter += txtContraseña_Enter;
+            txtContraseña.Leave += txtContraseña_Leave;
             // 
             // pictureBox1
             // 
@@ -142,7 +144,6 @@
             Controls.Add(btnIniciarSesion);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            MinimizeBox = false;
             Name = "frmInicioSesion";
             Opacity = 0.96D;
             StartPosition = FormStartPosition.CenterScreen;
