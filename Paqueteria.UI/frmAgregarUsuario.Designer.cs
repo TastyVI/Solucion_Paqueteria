@@ -203,9 +203,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.agregarU;
-            pictureBox3.Location = new Point(12, 150);
+            pictureBox3.Location = new Point(0, 136);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(134, 147);
+            pictureBox3.Size = new Size(163, 174);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 28;
             pictureBox3.TabStop = false;

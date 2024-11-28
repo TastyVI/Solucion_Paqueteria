@@ -32,13 +32,16 @@
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
+            txtFecha = new TextBox();
+            txtNombre = new TextBox();
+            txtInformacion = new TextBox();
             panel1 = new Panel();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // listBox1
@@ -56,14 +59,16 @@
             dataGridView1.Location = new Point(371, 202);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(300, 188);
+            dataGridView1.Size = new Size(361, 188);
             dataGridView1.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(335, 34);
+            pictureBox1.Image = Properties.Resources.logo;
+            pictureBox1.Location = new Point(353, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 62);
+            pictureBox1.Size = new Size(265, 138);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -75,35 +80,49 @@
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
-            // textBox2
+            // txtFecha
             // 
-            textBox2.Location = new Point(192, 117);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 7;
+            txtFecha.Location = new Point(192, 117);
+            txtFecha.Name = "txtFecha";
+            txtFecha.Size = new Size(125, 27);
+            txtFecha.TabIndex = 7;
+            txtFecha.Text = "FECHA";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Location = new Point(192, 162);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 8;
+            txtNombre.Location = new Point(192, 162);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(125, 27);
+            txtNombre.TabIndex = 8;
+            txtNombre.Text = "NOMBRE";
             // 
-            // textBox3
+            // txtInformacion
             // 
-            textBox3.Location = new Point(426, 162);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 9;
+            txtInformacion.Location = new Point(426, 162);
+            txtInformacion.Name = "txtInformacion";
+            txtInformacion.Size = new Size(125, 27);
+            txtInformacion.TabIndex = 9;
+            txtInformacion.Text = "INFORMACION";
             // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(pictureBox3);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(161, 450);
             panel1.TabIndex = 10;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.inventario;
+            pictureBox3.Location = new Point(12, 140);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(132, 117);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
             // 
             // frmInventarioLlegada
             // 
@@ -112,9 +131,9 @@
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
-            Controls.Add(textBox2);
+            Controls.Add(txtInformacion);
+            Controls.Add(txtNombre);
+            Controls.Add(txtFecha);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
@@ -124,6 +143,8 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,9 +154,10 @@
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TextBox textBox3;
+        private TextBox txtFecha;
+        private TextBox txtNombre;
+        private TextBox txtInformacion;
         private Panel panel1;
+        private PictureBox pictureBox3;
     }
 }
