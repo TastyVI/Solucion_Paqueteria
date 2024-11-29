@@ -58,23 +58,6 @@ namespace Paqueteria.UI
             }
         }
 
-        private void txtTipoUsuario_Enter(object sender, EventArgs e)
-        {
-            if (txtTipoUsuario.Text == "TIPO USUARIO")
-            {
-                txtTipoUsuario.Text = "";
-                txtTipoUsuario.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtTipoUsuario_Leave(object sender, EventArgs e)
-        {
-            if (txtTipoUsuario.Text == "")
-            {
-                txtTipoUsuario.Text = "TIPO USUARIO";
-                txtTipoUsuario.ForeColor = Color.Gray;
-            }
-        }
 
         private void txtContraseña_Enter(object sender, EventArgs e)
         {
@@ -82,7 +65,7 @@ namespace Paqueteria.UI
             {
                 txtContraseña.Text = "";
                 txtContraseña.ForeColor = Color.Black;
-               
+
             }
         }
 
@@ -92,8 +75,13 @@ namespace Paqueteria.UI
             {
                 txtContraseña.Text = "CONTRASEÑA";
                 txtContraseña.ForeColor = Color.Gray;
-               
+
             }
+        }
+
+        private void frmAgregarUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

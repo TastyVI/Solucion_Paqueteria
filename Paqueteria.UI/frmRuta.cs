@@ -16,5 +16,23 @@ namespace Paqueteria.UI
         {
             InitializeComponent();
         }
+
+        private void txtCantidad_Enter(object sender, EventArgs e)
+        {
+            if (txtCantidad.Text == "CANTIDAD")
+            {
+                txtCantidad.Text = "";
+                txtCantidad.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtCantidad_Leave(object sender, EventArgs e)
+        {
+            if (txtCantidad.Text == "")
+            {
+                txtCantidad.Text = "CANTIDAD";
+                txtCantidad.ForeColor = Color.Gray;
+            }
+        }
     }
 }

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Paqueteria.UI
 {
-    public partial class frmPendientes : Form
+    public partial class frmMenu : Form
     {
-        public frmPendientes()
+        public frmMenu()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

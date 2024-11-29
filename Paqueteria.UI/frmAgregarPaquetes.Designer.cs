@@ -41,6 +41,7 @@
             txtUbicacion = new TextBox();
             panel4 = new Panel();
             pictureBox3 = new PictureBox();
+            btnVolverMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -172,6 +173,7 @@
             // panel4
             // 
             panel4.BackColor = Color.SteelBlue;
+            panel4.Controls.Add(btnVolverMenu);
             panel4.Controls.Add(pictureBox3);
             panel4.Dock = DockStyle.Left;
             panel4.Location = new Point(0, 0);
@@ -188,6 +190,20 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
+            // 
+            // btnVolverMenu
+            // 
+            btnVolverMenu.Dock = DockStyle.Top;
+            btnVolverMenu.FlatStyle = FlatStyle.Flat;
+            btnVolverMenu.ForeColor = Color.White;
+            btnVolverMenu.Image = Properties.Resources.paneles;
+            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
+            btnVolverMenu.Location = new Point(0, 0);
+            btnVolverMenu.Name = "btnVolverMenu";
+            btnVolverMenu.Size = new Size(152, 43);
+            btnVolverMenu.TabIndex = 10;
+            btnVolverMenu.Text = "Volver al Menu";
+            btnVolverMenu.UseVisualStyleBackColor = true;
             // 
             // frmAgregarPaquetes
             // 
@@ -233,5 +249,6 @@
         private TextBox txtUbicacion;
         private Panel panel4;
         private PictureBox pictureBox3;
+        private Button btnVolverMenu;
     }
 }

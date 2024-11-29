@@ -33,7 +33,6 @@
             btnAgregar = new Button();
             button2 = new Button();
             listBox1 = new ListBox();
-            txtTipoUsuario = new TextBox();
             txtNombreUsuario = new TextBox();
             panel3 = new Panel();
             panel2 = new Panel();
@@ -42,7 +41,9 @@
             panel4 = new Panel();
             txtContraseña = new TextBox();
             panel5 = new Panel();
+            btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
+            cbAdministrador = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel5.SuspendLayout();
@@ -97,20 +98,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(241, 264);
             listBox1.TabIndex = 9;
-            // 
-            // txtTipoUsuario
-            // 
-            txtTipoUsuario.BackColor = SystemColors.ButtonHighlight;
-            txtTipoUsuario.BorderStyle = BorderStyle.None;
-            txtTipoUsuario.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTipoUsuario.ForeColor = Color.Gray;
-            txtTipoUsuario.Location = new Point(216, 264);
-            txtTipoUsuario.Name = "txtTipoUsuario";
-            txtTipoUsuario.Size = new Size(260, 28);
-            txtTipoUsuario.TabIndex = 24;
-            txtTipoUsuario.Text = "TIPO USUARIO";
-            txtTipoUsuario.Enter += txtTipoUsuario_Enter;
-            txtTipoUsuario.Leave += txtTipoUsuario_Leave;
             // 
             // txtNombreUsuario
             // 
@@ -193,12 +180,27 @@
             // panel5
             // 
             panel5.BackColor = Color.SteelBlue;
+            panel5.Controls.Add(btnVolverMenu);
             panel5.Controls.Add(pictureBox3);
             panel5.Dock = DockStyle.Left;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(163, 450);
             panel5.TabIndex = 27;
+            // 
+            // btnVolverMenu
+            // 
+            btnVolverMenu.Dock = DockStyle.Top;
+            btnVolverMenu.FlatStyle = FlatStyle.Flat;
+            btnVolverMenu.ForeColor = Color.White;
+            btnVolverMenu.Image = Properties.Resources.paneles;
+            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
+            btnVolverMenu.Location = new Point(0, 0);
+            btnVolverMenu.Name = "btnVolverMenu";
+            btnVolverMenu.Size = new Size(163, 43);
+            btnVolverMenu.TabIndex = 29;
+            btnVolverMenu.Text = "Volver al Menu";
+            btnVolverMenu.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -210,16 +212,28 @@
             pictureBox3.TabIndex = 28;
             pictureBox3.TabStop = false;
             // 
+            // cbAdministrador
+            // 
+            cbAdministrador.AutoSize = true;
+            cbAdministrador.Font = new Font("Tahoma", 13.8F);
+            cbAdministrador.ForeColor = Color.Gray;
+            cbAdministrador.Location = new Point(216, 260);
+            cbAdministrador.Name = "cbAdministrador";
+            cbAdministrador.Size = new Size(248, 32);
+            cbAdministrador.TabIndex = 28;
+            cbAdministrador.Text = "ES ADMINISTRADOR";
+            cbAdministrador.UseVisualStyleBackColor = true;
+            // 
             // frmAgregarUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(cbAdministrador);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(txtContraseña);
-            Controls.Add(txtTipoUsuario);
             Controls.Add(txtNombreUsuario);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -232,6 +246,7 @@
             Controls.Add(pictureBox1);
             Name = "frmAgregarUsuario";
             Text = "frmAgregarUsuario";
+            Load += frmAgregarUsuario_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel5.ResumeLayout(false);
@@ -247,7 +262,6 @@
         private Button btnAgregar;
         private Button button2;
         private ListBox listBox1;
-        private TextBox txtTipoUsuario;
         private TextBox txtNombreUsuario;
         private Panel panel3;
         private Panel panel2;
@@ -257,5 +271,7 @@
         private TextBox txtContraseña;
         private Panel panel5;
         private PictureBox pictureBox3;
+        private CheckBox cbAdministrador;
+        private Button btnVolverMenu;
     }
 }

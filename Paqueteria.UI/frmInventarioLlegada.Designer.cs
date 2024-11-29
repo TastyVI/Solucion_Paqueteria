@@ -37,6 +37,8 @@
             txtInformacion = new TextBox();
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
+            button1 = new Button();
+            btnVolverMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -107,6 +109,7 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(btnVolverMenu);
             panel1.Controls.Add(pictureBox3);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -124,12 +127,38 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Image = Properties.Resources.paneles;
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(426, 409);
+            button1.Name = "button1";
+            button1.Size = new Size(192, 29);
+            button1.TabIndex = 11;
+            button1.Text = "BUSCAR";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // btnVolverMenu
+            // 
+            btnVolverMenu.Dock = DockStyle.Top;
+            btnVolverMenu.FlatStyle = FlatStyle.Flat;
+            btnVolverMenu.ForeColor = Color.White;
+            btnVolverMenu.Image = Properties.Resources.paneles;
+            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
+            btnVolverMenu.Location = new Point(0, 0);
+            btnVolverMenu.Name = "btnVolverMenu";
+            btnVolverMenu.Size = new Size(161, 43);
+            btnVolverMenu.TabIndex = 10;
+            btnVolverMenu.Text = "Volver al Menu";
+            btnVolverMenu.UseVisualStyleBackColor = true;
+            // 
             // frmInventarioLlegada
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(panel1);
             Controls.Add(txtInformacion);
             Controls.Add(txtNombre);
@@ -159,5 +188,7 @@
         private TextBox txtInformacion;
         private Panel panel1;
         private PictureBox pictureBox3;
+        private Button button1;
+        private Button btnVolverMenu;
     }
 }

@@ -21,5 +21,23 @@ namespace Paqueteria.UI
         {
 
         }
+
+        private void txtMotivo_Enter(object sender, EventArgs e)
+        {
+            if (txtMotivo.Text == "MOTIVO")
+            {
+                txtMotivo.Text = "";
+                txtMotivo.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtMotivo_Leave(object sender, EventArgs e)
+        {
+            if (txtMotivo.Text == "")
+            {
+                txtMotivo.Text = "MOTIVO";
+                txtMotivo.ForeColor = Color.Gray;
+            }
+        }
     }
 }
