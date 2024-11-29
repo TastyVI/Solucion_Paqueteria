@@ -79,6 +79,7 @@
             btnAgregar.TabIndex = 7;
             btnAgregar.Text = "AGREGAR";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // button2
             // 

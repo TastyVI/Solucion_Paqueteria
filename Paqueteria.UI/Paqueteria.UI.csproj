@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FireSharp.Serialization.JsonNet" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Paqueteria.DB\Paqueteria.DB.csproj" />
+    <ProjectReference Include="..\Paqueteria.DLL\Paqueteria.DLL.csproj" />
+    <ProjectReference Include="..\Paqueteria.UC\Paqueteria.UC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
