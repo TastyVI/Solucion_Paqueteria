@@ -66,11 +66,12 @@
             // 
             panel1.BackColor = Color.SteelBlue;
             panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 151);
+            panel1.Size = new Size(865, 142);
             panel1.TabIndex = 0;
             // 
             // pictureBox9
@@ -85,7 +86,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(326, 44);
+            pictureBox2.Location = new Point(643, 47);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(125, 62);
             pictureBox2.TabIndex = 0;
@@ -94,7 +95,7 @@
             // pictureBox10
             // 
             pictureBox10.Image = Properties.Resources.Eliminar;
-            pictureBox10.Location = new Point(429, 434);
+            pictureBox10.Location = new Point(513, 295);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(105, 71);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -104,7 +105,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(9, 264);
+            pictureBox1.Location = new Point(321, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(183, 135);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -114,7 +115,7 @@
             // pictureBox11
             // 
             pictureBox11.Image = Properties.Resources.AgregarConductor;
-            pictureBox11.Location = new Point(211, 434);
+            pictureBox11.Location = new Point(60, 295);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(105, 71);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -125,7 +126,7 @@
             // 
             btnEliminarInventario.Image = Properties.Resources.paneles;
             btnEliminarInventario.ImageAlign = ContentAlignment.TopCenter;
-            btnEliminarInventario.Location = new Point(403, 511);
+            btnEliminarInventario.Location = new Point(494, 372);
             btnEliminarInventario.Name = "btnEliminarInventario";
             btnEliminarInventario.Size = new Size(145, 55);
             btnEliminarInventario.TabIndex = 64;
@@ -136,7 +137,7 @@
             // 
             btnAgregarDriver.Image = Properties.Resources.paneles;
             btnAgregarDriver.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregarDriver.Location = new Point(198, 511);
+            btnAgregarDriver.Location = new Point(51, 398);
             btnAgregarDriver.Name = "btnAgregarDriver";
             btnAgregarDriver.Size = new Size(145, 29);
             btnAgregarDriver.TabIndex = 63;
@@ -146,7 +147,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.ruta;
-            pictureBox8.Location = new Point(612, 293);
+            pictureBox8.Location = new Point(700, 295);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(105, 71);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -156,7 +157,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.devolucion;
-            pictureBox7.Location = new Point(429, 293);
+            pictureBox7.Location = new Point(284, 295);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(105, 71);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -166,7 +167,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.pendientes;
-            pictureBox6.Location = new Point(211, 293);
+            pictureBox6.Location = new Point(249, 147);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(105, 71);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -176,7 +177,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.inventario;
-            pictureBox5.Location = new Point(612, 157);
+            pictureBox5.Location = new Point(623, 147);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(105, 71);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -186,7 +187,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.agregarU;
-            pictureBox4.Location = new Point(419, 157);
+            pictureBox4.Location = new Point(430, 147);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(103, 71);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -196,7 +197,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.agregarP;
-            pictureBox3.Location = new Point(211, 157);
+            pictureBox3.Location = new Point(60, 147);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(105, 71);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -207,7 +208,7 @@
             // 
             btnRuta.Image = Properties.Resources.paneles;
             btnRuta.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta.Location = new Point(592, 370);
+            btnRuta.Location = new Point(682, 372);
             btnRuta.Name = "btnRuta";
             btnRuta.Size = new Size(145, 29);
             btnRuta.TabIndex = 56;
@@ -218,7 +219,7 @@
             // 
             btnInventarioLlegada.Image = Properties.Resources.paneles;
             btnInventarioLlegada.ImageAlign = ContentAlignment.TopCenter;
-            btnInventarioLlegada.Location = new Point(592, 234);
+            btnInventarioLlegada.Location = new Point(603, 224);
             btnInventarioLlegada.Name = "btnInventarioLlegada";
             btnInventarioLlegada.Size = new Size(145, 29);
             btnInventarioLlegada.TabIndex = 55;
@@ -229,7 +230,7 @@
             // 
             btnPaqueteDevolucion.Image = Properties.Resources.paneles;
             btnPaqueteDevolucion.ImageAlign = ContentAlignment.TopCenter;
-            btnPaqueteDevolucion.Location = new Point(403, 370);
+            btnPaqueteDevolucion.Location = new Point(265, 385);
             btnPaqueteDevolucion.Name = "btnPaqueteDevolucion";
             btnPaqueteDevolucion.Size = new Size(145, 55);
             btnPaqueteDevolucion.TabIndex = 54;
@@ -240,7 +241,7 @@
             // 
             btnAgregarUsuarios.Image = Properties.Resources.paneles;
             btnAgregarUsuarios.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregarUsuarios.Location = new Point(403, 234);
+            btnAgregarUsuarios.Location = new Point(414, 224);
             btnAgregarUsuarios.Name = "btnAgregarUsuarios";
             btnAgregarUsuarios.Size = new Size(145, 29);
             btnAgregarUsuarios.TabIndex = 53;
@@ -251,7 +252,7 @@
             // 
             btnPendientes.Image = Properties.Resources.paneles;
             btnPendientes.ImageAlign = ContentAlignment.TopCenter;
-            btnPendientes.Location = new Point(198, 370);
+            btnPendientes.Location = new Point(229, 224);
             btnPendientes.Name = "btnPendientes";
             btnPendientes.Size = new Size(145, 29);
             btnPendientes.TabIndex = 52;
@@ -262,7 +263,7 @@
             // 
             btnAgregarPaquetes.Image = Properties.Resources.paneles;
             btnAgregarPaquetes.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregarPaquetes.Location = new Point(198, 234);
+            btnAgregarPaquetes.Location = new Point(51, 224);
             btnAgregarPaquetes.Name = "btnAgregarPaquetes";
             btnAgregarPaquetes.Size = new Size(145, 29);
             btnAgregarPaquetes.TabIndex = 51;
@@ -274,9 +275,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 568);
+            ClientSize = new Size(865, 455);
             Controls.Add(pictureBox10);
-            Controls.Add(pictureBox1);
             Controls.Add(pictureBox11);
             Controls.Add(btnEliminarInventario);
             Controls.Add(btnAgregarDriver);
