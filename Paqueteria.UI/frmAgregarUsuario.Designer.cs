@@ -230,9 +230,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.LogoEmpresa;
-            pictureBox4.Location = new Point(535, 12);
+            pictureBox4.Location = new Point(478, 0);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(148, 117);
+            pictureBox4.Size = new Size(49, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 45;
             pictureBox4.TabStop = false;

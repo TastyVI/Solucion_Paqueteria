@@ -123,7 +123,7 @@
             pictureBox3.Image = Properties.Resources.LogoEmpresa;
             pictureBox3.Location = new Point(153, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 93);
+            pictureBox3.Size = new Size(40, 43);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 45;
             pictureBox3.TabStop = false;

@@ -59,6 +59,7 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -213,9 +214,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.LogoEmpresa;
-            pictureBox9.Location = new Point(628, 351);
+            pictureBox9.Location = new Point(12, 0);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(148, 117);
+            pictureBox9.Size = new Size(54, 48);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 45;
             pictureBox9.TabStop = false;
@@ -226,7 +227,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 568);
-            Controls.Add(pictureBox9);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);

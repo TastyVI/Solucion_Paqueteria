@@ -76,9 +76,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.LogoEmpresa;
-            pictureBox2.Location = new Point(609, 366);
+            pictureBox2.Location = new Point(716, 394);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(148, 117);
+            pictureBox2.Size = new Size(58, 55);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 44;
             pictureBox2.TabStop = false;
