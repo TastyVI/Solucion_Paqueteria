@@ -122,7 +122,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(154, 450);
+            panel2.Size = new Size(154, 469);
             panel2.TabIndex = 23;
             // 
             // btnVolverMenu
@@ -174,7 +174,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(848, 450);
+            ClientSize = new Size(876, 469);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
