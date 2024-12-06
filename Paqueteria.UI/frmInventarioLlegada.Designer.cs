@@ -36,14 +36,16 @@
             txtNombre = new TextBox();
             txtInformacion = new TextBox();
             panel1 = new Panel();
+            btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
             button1 = new Button();
-            btnVolverMenu = new Button();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // listBox1
@@ -117,6 +119,20 @@
             panel1.Size = new Size(161, 450);
             panel1.TabIndex = 10;
             // 
+            // btnVolverMenu
+            // 
+            btnVolverMenu.Dock = DockStyle.Top;
+            btnVolverMenu.FlatStyle = FlatStyle.Flat;
+            btnVolverMenu.ForeColor = Color.White;
+            btnVolverMenu.Image = Properties.Resources.paneles;
+            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
+            btnVolverMenu.Location = new Point(0, 0);
+            btnVolverMenu.Name = "btnVolverMenu";
+            btnVolverMenu.Size = new Size(161, 43);
+            btnVolverMenu.TabIndex = 10;
+            btnVolverMenu.Text = "Volver al Menu";
+            btnVolverMenu.UseVisualStyleBackColor = true;
+            // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.inventario;
@@ -138,19 +154,15 @@
             button1.Text = "BUSCAR";
             button1.UseVisualStyleBackColor = true;
             // 
-            // btnVolverMenu
+            // pictureBox4
             // 
-            btnVolverMenu.Dock = DockStyle.Top;
-            btnVolverMenu.FlatStyle = FlatStyle.Flat;
-            btnVolverMenu.ForeColor = Color.White;
-            btnVolverMenu.Image = Properties.Resources.paneles;
-            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
-            btnVolverMenu.Location = new Point(0, 0);
-            btnVolverMenu.Name = "btnVolverMenu";
-            btnVolverMenu.Size = new Size(161, 43);
-            btnVolverMenu.TabIndex = 10;
-            btnVolverMenu.Text = "Volver al Menu";
-            btnVolverMenu.UseVisualStyleBackColor = true;
+            pictureBox4.Image = Properties.Resources.LogoEmpresa;
+            pictureBox4.Location = new Point(212, 13);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(94, 83);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 45;
+            pictureBox4.TabStop = false;
             // 
             // frmInventarioLlegada
             // 
@@ -158,6 +170,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox4);
             Controls.Add(button1);
             Controls.Add(panel1);
             Controls.Add(txtInformacion);
@@ -174,6 +187,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -190,5 +204,6 @@
         private PictureBox pictureBox3;
         private Button button1;
         private Button btnVolverMenu;
+        private PictureBox pictureBox4;
     }
 }

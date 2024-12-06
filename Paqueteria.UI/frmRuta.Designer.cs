@@ -39,16 +39,18 @@
             btnVolverMenu = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(160, 31);
+            comboBox1.Location = new Point(169, 97);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(158, 28);
             comboBox1.TabIndex = 18;
@@ -74,7 +76,7 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(160, 143);
+            listBox1.Location = new Point(169, 209);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(150, 224);
             listBox1.TabIndex = 14;
@@ -92,7 +94,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(160, 117);
+            panel1.Location = new Point(169, 183);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
             panel1.Size = new Size(158, 1);
@@ -104,7 +106,7 @@
             txtCantidad.BorderStyle = BorderStyle.None;
             txtCantidad.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCantidad.ForeColor = Color.Gray;
-            txtCantidad.Location = new Point(160, 85);
+            txtCantidad.Location = new Point(169, 151);
             txtCantidad.Name = "txtCantidad";
             txtCantidad.Size = new Size(158, 28);
             txtCantidad.TabIndex = 21;
@@ -157,12 +159,23 @@
             pictureBox2.TabIndex = 24;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.LogoEmpresa;
+            pictureBox3.Location = new Point(211, 4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(88, 87);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 45;
+            pictureBox3.TabStop = false;
+            // 
             // frmRuta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(848, 450);
+            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -178,6 +191,7 @@
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -196,5 +210,6 @@
         private PictureBox pictureBox1;
         private Button btnVolverMenu;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

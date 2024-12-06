@@ -35,13 +35,15 @@
             txtMotivo = new TextBox();
             dataGridView1 = new DataGridView();
             panel2 = new Panel();
+            btnVolverMenu = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            btnVolverMenu = new Button();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // lstPaquetesAnteriores
@@ -117,6 +119,20 @@
             panel2.Size = new Size(176, 450);
             panel2.TabIndex = 24;
             // 
+            // btnVolverMenu
+            // 
+            btnVolverMenu.Dock = DockStyle.Top;
+            btnVolverMenu.FlatStyle = FlatStyle.Flat;
+            btnVolverMenu.ForeColor = Color.White;
+            btnVolverMenu.Image = Properties.Resources.paneles;
+            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
+            btnVolverMenu.Location = new Point(0, 0);
+            btnVolverMenu.Name = "btnVolverMenu";
+            btnVolverMenu.Size = new Size(176, 47);
+            btnVolverMenu.TabIndex = 30;
+            btnVolverMenu.Text = "Volver al Menu";
+            btnVolverMenu.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.devolucion1;
@@ -137,19 +153,15 @@
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
             // 
-            // btnVolverMenu
+            // pictureBox3
             // 
-            btnVolverMenu.Dock = DockStyle.Top;
-            btnVolverMenu.FlatStyle = FlatStyle.Flat;
-            btnVolverMenu.ForeColor = Color.White;
-            btnVolverMenu.Image = Properties.Resources.paneles;
-            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
-            btnVolverMenu.Location = new Point(0, 0);
-            btnVolverMenu.Name = "btnVolverMenu";
-            btnVolverMenu.Size = new Size(176, 47);
-            btnVolverMenu.TabIndex = 30;
-            btnVolverMenu.Text = "Volver al Menu";
-            btnVolverMenu.UseVisualStyleBackColor = true;
+            pictureBox3.Image = Properties.Resources.LogoEmpresa;
+            pictureBox3.Location = new Point(648, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(113, 95);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 45;
+            pictureBox3.TabStop = false;
             // 
             // frmRegistroPaqueteDevolucion
             // 
@@ -157,6 +169,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(dataGridView1);
@@ -171,6 +184,7 @@
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -186,5 +200,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Button btnVolverMenu;
+        private PictureBox pictureBox3;
     }
 }

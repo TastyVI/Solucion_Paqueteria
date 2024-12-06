@@ -70,5 +70,10 @@ namespace Paqueteria.UI
                 txtUbicacion.ForeColor = Color.Gray;
             }
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

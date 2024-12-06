@@ -44,10 +44,12 @@
             btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
             cbAdministrador = new CheckBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -63,9 +65,9 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(593, 46);
+            pictureBox2.Location = new Point(700, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 62);
+            pictureBox2.Size = new Size(98, 62);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -225,12 +227,23 @@
             cbAdministrador.Text = "ES ADMINISTRADOR";
             cbAdministrador.UseVisualStyleBackColor = true;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.LogoEmpresa;
+            pictureBox4.Location = new Point(535, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(148, 117);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 45;
+            pictureBox4.TabStop = false;
+            // 
             // frmAgregarUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox4);
             Controls.Add(cbAdministrador);
             Controls.Add(panel5);
             Controls.Add(panel4);
@@ -252,6 +265,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -274,5 +288,6 @@
         private PictureBox pictureBox3;
         private CheckBox cbAdministrador;
         private Button btnVolverMenu;
+        private PictureBox pictureBox4;
     }
 }

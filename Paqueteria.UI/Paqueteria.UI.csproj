@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="frmAgregarConductor.cs" />
+    <Compile Remove="frmAgregarConductor.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FireSharp.Serialization.JsonNet" Version="1.1.0" />
   </ItemGroup>
 

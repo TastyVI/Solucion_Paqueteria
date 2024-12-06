@@ -40,21 +40,23 @@
             txtFecha = new TextBox();
             txtUbicacion = new TextBox();
             panel4 = new Panel();
-            pictureBox3 = new PictureBox();
             btnVolverMenu = new Button();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(266, -19);
+            pictureBox1.Location = new Point(149, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(308, 140);
+            pictureBox1.Size = new Size(269, 152);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -87,7 +89,7 @@
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(445, 146);
+            dataGridView1.Location = new Point(453, 146);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(388, 247);
@@ -95,9 +97,9 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(648, 28);
+            pictureBox2.Location = new Point(741, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 62);
+            pictureBox2.Size = new Size(100, 62);
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
             // 
@@ -181,16 +183,6 @@
             panel4.Size = new Size(152, 450);
             panel4.TabIndex = 19;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.agregarP;
-            pictureBox3.Location = new Point(12, 170);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 119);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
-            // 
             // btnVolverMenu
             // 
             btnVolverMenu.Dock = DockStyle.Top;
@@ -205,12 +197,34 @@
             btnVolverMenu.Text = "Volver al Menu";
             btnVolverMenu.UseVisualStyleBackColor = true;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.agregarP;
+            pictureBox3.Location = new Point(12, 170);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(125, 119);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.LogoEmpresa;
+            pictureBox4.Location = new Point(524, 0);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(116, 105);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 45;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // frmAgregarPaquetes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(853, 450);
+            Controls.Add(pictureBox4);
             Controls.Add(panel4);
             Controls.Add(txtUbicacion);
             Controls.Add(txtFecha);
@@ -230,6 +244,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -250,5 +265,6 @@
         private Panel panel4;
         private PictureBox pictureBox3;
         private Button btnVolverMenu;
+        private PictureBox pictureBox4;
     }
 }

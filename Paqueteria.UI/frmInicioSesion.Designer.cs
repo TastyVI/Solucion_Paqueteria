@@ -36,9 +36,11 @@
             panel2 = new Panel();
             panel3 = new Panel();
             pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // btnIniciarSesion
@@ -131,12 +133,23 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.LogoEmpresa;
+            pictureBox3.Location = new Point(602, 306);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(148, 117);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 45;
+            pictureBox3.TabStop = false;
+            // 
             // frmInicioSesion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(762, 449);
+            Controls.Add(pictureBox3);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -154,6 +167,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,5 +182,6 @@
         private Panel panel2;
         private Panel panel3;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
