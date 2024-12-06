@@ -65,6 +65,8 @@
             txtBuscarPaquete.Size = new Size(226, 28);
             txtBuscarPaquete.TabIndex = 46;
             txtBuscarPaquete.Text = "BUSCAR PAQUETE";
+            txtBuscarPaquete.Enter += txtBuscarPaquete_Enter;
+            txtBuscarPaquete.Leave += txtBuscarPaquete_Leave;
             // 
             // dateTimePicker1
             // 
@@ -76,9 +78,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.LogoEmpresa;
-            pictureBox2.Location = new Point(716, 394);
+            pictureBox2.Location = new Point(644, 361);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(58, 55);
+            pictureBox2.Size = new Size(130, 122);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 44;
             pictureBox2.TabStop = false;
@@ -172,6 +174,7 @@
             Controls.Add(btnEliminar);
             Controls.Add(listBox1);
             Controls.Add(panel5);
+            MaximizeBox = false;
             Name = "frmEliminarInventario";
             Text = "frmEliminarInventario";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
