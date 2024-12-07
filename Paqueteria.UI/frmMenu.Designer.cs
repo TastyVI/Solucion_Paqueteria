@@ -30,9 +30,8 @@
         {
             panel1 = new Panel();
             pictureBox9 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox10 = new PictureBox();
             pictureBox1 = new PictureBox();
+            pictureBox10 = new PictureBox();
             pictureBox11 = new PictureBox();
             btnEliminarInventario = new Button();
             btnAgregarDriver = new Button();
@@ -50,9 +49,8 @@
             btnAgregarPaquetes = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -67,7 +65,6 @@
             panel1.BackColor = Color.SteelBlue;
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -84,13 +81,15 @@
             pictureBox9.TabIndex = 45;
             pictureBox9.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            pictureBox2.Location = new Point(643, 47);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 62);
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            pictureBox1.Image = Properties.Resources.logo;
+            pictureBox1.Location = new Point(321, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(238, 135);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 50;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -101,16 +100,6 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 66;
             pictureBox10.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(321, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(183, 135);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 50;
-            pictureBox1.TabStop = false;
             // 
             // pictureBox11
             // 
@@ -128,7 +117,7 @@
             btnEliminarInventario.ImageAlign = ContentAlignment.TopCenter;
             btnEliminarInventario.Location = new Point(494, 372);
             btnEliminarInventario.Name = "btnEliminarInventario";
-            btnEliminarInventario.Size = new Size(145, 55);
+            btnEliminarInventario.Size = new Size(145, 29);
             btnEliminarInventario.TabIndex = 64;
             btnEliminarInventario.Text = "Eliminar inventario";
             btnEliminarInventario.UseVisualStyleBackColor = true;
@@ -293,13 +282,13 @@
             Controls.Add(btnPendientes);
             Controls.Add(btnAgregarPaquetes);
             Controls.Add(panel1);
+            MaximizeBox = false;
             Name = "frmMenu";
             Text = "frmMenu";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -313,7 +302,6 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox1;

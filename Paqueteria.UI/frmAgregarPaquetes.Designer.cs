@@ -32,7 +32,6 @@
             btnEliminar = new Button();
             btnAgregar = new Button();
             dataGridView1 = new DataGridView();
-            pictureBox2 = new PictureBox();
             txtId = new TextBox();
             panel1 = new Panel();
             panel2 = new Panel();
@@ -45,7 +44,6 @@
             pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -94,14 +92,6 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(388, 247);
             dataGridView1.TabIndex = 11;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(741, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 62);
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
             // 
             // txtId
             // 
@@ -232,7 +222,6 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(txtId);
-            Controls.Add(pictureBox2);
             Controls.Add(dataGridView1);
             Controls.Add(btnEliminar);
             Controls.Add(btnAgregar);
@@ -241,7 +230,6 @@
             Text = "frmPaquete";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -255,7 +243,6 @@
         private Button btnEliminar;
         private Button btnAgregar;
         private DataGridView dataGridView1;
-        private PictureBox pictureBox2;
         private TextBox txtId;
         private Panel panel1;
         private Panel panel2;
