@@ -31,7 +31,6 @@
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             txtFecha = new TextBox();
             txtNombre = new TextBox();
             txtInformacion = new TextBox();
@@ -42,7 +41,6 @@
             pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -75,14 +73,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(646, 34);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 62);
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
             // 
             // txtFecha
             // 
@@ -176,15 +166,14 @@
             Controls.Add(txtInformacion);
             Controls.Add(txtNombre);
             Controls.Add(txtFecha);
-            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
             Controls.Add(listBox1);
+            MaximizeBox = false;
             Name = "frmInventarioLlegada";
             Text = "frmInventarioLlegada";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -196,7 +185,6 @@
         private ListBox listBox1;
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private TextBox txtFecha;
         private TextBox txtNombre;
         private TextBox txtInformacion;

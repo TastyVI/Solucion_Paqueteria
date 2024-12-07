@@ -49,9 +49,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.LogoEmpresa;
-            pictureBox2.Location = new Point(603, 12);
+            pictureBox2.Location = new Point(543, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(122, 131);
+            pictureBox2.Size = new Size(83, 87);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 39;
             pictureBox2.TabStop = false;
@@ -75,7 +75,7 @@
             panel4.Dock = DockStyle.Left;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(152, 450);
+            panel4.Size = new Size(152, 432);
             panel4.TabIndex = 37;
             // 
             // btnVolverMenu
@@ -186,7 +186,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(696, 432);
             Controls.Add(pictureBox2);
             Controls.Add(btnAgregar);
             Controls.Add(panel4);

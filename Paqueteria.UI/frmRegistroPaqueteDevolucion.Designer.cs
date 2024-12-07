@@ -178,6 +178,7 @@
             Controls.Add(lstPaquetesAnteriores);
             Controls.Add(lblListaPaquetes);
             Controls.Add(btnGuardar);
+            MaximizeBox = false;
             Name = "frmRegistroPaqueteDevolucion";
             Text = "frmRegistroPaqueteDevolucion";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

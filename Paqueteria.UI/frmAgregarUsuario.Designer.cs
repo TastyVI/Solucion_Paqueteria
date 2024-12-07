@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             btnAgregar = new Button();
             button2 = new Button();
             listBox1 = new ListBox();
@@ -46,7 +45,6 @@
             cbAdministrador = new CheckBox();
             pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -62,14 +60,6 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(700, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(98, 62);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
             // 
             // btnAgregar
             // 
@@ -256,13 +246,12 @@
             Controls.Add(listBox1);
             Controls.Add(button2);
             Controls.Add(btnAgregar);
-            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            MaximizeBox = false;
             Name = "frmAgregarUsuario";
             Text = "frmAgregarUsuario";
             Load += frmAgregarUsuario_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -273,7 +262,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private Button btnAgregar;
         private Button button2;
         private ListBox listBox1;

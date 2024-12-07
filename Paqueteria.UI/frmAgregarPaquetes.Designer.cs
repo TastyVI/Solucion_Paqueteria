@@ -226,6 +226,7 @@
             Controls.Add(btnEliminar);
             Controls.Add(btnAgregar);
             Controls.Add(pictureBox1);
+            MaximizeBox = false;
             Name = "frmAgregarPaquetes";
             Text = "frmPaquete";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

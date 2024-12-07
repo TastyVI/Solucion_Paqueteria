@@ -140,6 +140,7 @@
             Controls.Add(panel1);
             Controls.Add(dataGridView2);
             Controls.Add(button1);
+            MaximizeBox = false;
             Name = "frmPendientes";
             Text = "frmPendientes";
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();

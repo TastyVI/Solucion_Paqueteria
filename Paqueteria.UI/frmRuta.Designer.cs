@@ -185,6 +185,7 @@
             Controls.Add(txtAgregar);
             Controls.Add(listBox2);
             Controls.Add(listBox1);
+            MaximizeBox = false;
             Name = "frmRuta";
             Text = "frmRuta";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
