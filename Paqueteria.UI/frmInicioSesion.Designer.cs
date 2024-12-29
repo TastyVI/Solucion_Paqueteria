@@ -32,13 +32,13 @@
             txtUsuario = new TextBox();
             txtContraseña = new TextBox();
             pictureBox1 = new PictureBox();
-            panel1 = new Panel();
-            panel2 = new Panel();
             panel3 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             panel4 = new Panel();
             pictureBox4 = new PictureBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -84,7 +84,7 @@
             txtContraseña.CausesValidation = false;
             txtContraseña.Font = new Font("Tahoma", 13.8F);
             txtContraseña.ForeColor = Color.Gray;
-            txtContraseña.Location = new Point(467, 473);
+            txtContraseña.Location = new Point(467, 486);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(434, 28);
             txtContraseña.TabIndex = 2;
@@ -102,28 +102,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.CausesValidation = false;
-            panel1.Location = new Point(467, 431);
-            panel1.Margin = new Padding(1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(437, 1);
-            panel1.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            panel2.BackColor = SystemColors.ActiveCaptionText;
-            panel2.CausesValidation = false;
-            panel2.Location = new Point(464, 507);
-            panel2.Margin = new Padding(1);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(437, 1);
-            panel2.TabIndex = 5;
             // 
             // panel3
             // 
@@ -161,7 +139,7 @@
             panel4.Controls.Add(pictureBox4);
             panel4.Location = new Point(1176, -3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(246, 747);
+            panel4.Size = new Size(246, 800);
             panel4.TabIndex = 46;
             // 
             // pictureBox4
@@ -174,17 +152,35 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(462, 436);
+            panel1.Margin = new Padding(1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(437, 1);
+            panel1.TabIndex = 47;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ActiveCaptionText;
+            panel2.Location = new Point(464, 523);
+            panel2.Margin = new Padding(1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(437, 1);
+            panel2.TabIndex = 48;
+            // 
             // frmInicioSesion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 754);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(panel4);
             Controls.Add(pictureBox3);
             Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Controls.Add(txtContraseña);
             Controls.Add(txtUsuario);
@@ -212,12 +208,12 @@
         private TextBox txtUsuario;
         private TextBox txtContraseña;
         private PictureBox pictureBox1;
-        private Panel panel1;
-        private Panel panel2;
         private Panel panel3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Panel panel4;
         private PictureBox pictureBox4;
+        private Panel panel1;
+        private Panel panel2;
     }
 }
