@@ -5,14 +5,13 @@ namespace Paqueteria.UI
         public frmInicioSesion()
         {
             InitializeComponent();
+            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void frmInicioSesion_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

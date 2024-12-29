@@ -15,6 +15,13 @@ namespace Paqueteria.UI
         public frmAgregarDriver()
         {
             InitializeComponent();
+            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+
+
         }
 
         private void txtNombreCompleto_Enter(object sender, EventArgs e)
@@ -69,6 +76,11 @@ namespace Paqueteria.UI
                 txtTipoDeUnidad.Text = "TIPO DE UNIDAD";
                 txtTipoDeUnidad.ForeColor = Color.Gray;
             }
+        }
+
+        private void frmAgregarDriver_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

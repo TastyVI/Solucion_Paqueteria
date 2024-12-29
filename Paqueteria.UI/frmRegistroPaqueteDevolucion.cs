@@ -15,6 +15,11 @@ namespace Paqueteria.UI
         public frmRegistroPaqueteDevolucion()
         {
             InitializeComponent();
+            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
