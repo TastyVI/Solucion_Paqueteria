@@ -15,6 +15,10 @@ namespace Paqueteria.UI
         public frmInventarioLlegada()
         {
             InitializeComponent();
+            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

@@ -33,12 +33,12 @@
             pictureBox1 = new PictureBox();
             txtFecha = new TextBox();
             txtNombre = new TextBox();
-            txtInformacion = new TextBox();
             panel1 = new Panel();
             btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
             button1 = new Button();
             pictureBox4 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -51,52 +51,48 @@
             listBox1.FormattingEnabled = true;
             listBox1.Location = new Point(192, 214);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 184);
+            listBox1.Size = new Size(499, 504);
             listBox1.TabIndex = 3;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.SteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(371, 202);
+            dataGridView1.Location = new Point(809, 192);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(361, 188);
+            dataGridView1.Size = new Size(610, 490);
             dataGridView1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(353, 12);
+            pictureBox1.Location = new Point(818, -71);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(265, 138);
+            pictureBox1.Size = new Size(529, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // txtFecha
             // 
-            txtFecha.Location = new Point(192, 117);
+            txtFecha.Font = new Font("Segoe UI", 12F);
+            txtFecha.Location = new Point(445, 162);
             txtFecha.Name = "txtFecha";
-            txtFecha.Size = new Size(125, 27);
+            txtFecha.ReadOnly = true;
+            txtFecha.Size = new Size(150, 34);
             txtFecha.TabIndex = 7;
             txtFecha.Text = "FECHA";
             // 
             // txtNombre
             // 
+            txtNombre.Font = new Font("Segoe UI", 12F);
             txtNombre.Location = new Point(192, 162);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(125, 27);
+            txtNombre.ReadOnly = true;
+            txtNombre.Size = new Size(227, 34);
             txtNombre.TabIndex = 8;
             txtNombre.Text = "NOMBRE";
-            // 
-            // txtInformacion
-            // 
-            txtInformacion.Location = new Point(426, 162);
-            txtInformacion.Name = "txtInformacion";
-            txtInformacion.Size = new Size(125, 27);
-            txtInformacion.TabIndex = 9;
-            txtInformacion.Text = "INFORMACION";
             // 
             // panel1
             // 
@@ -106,13 +102,14 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(161, 450);
+            panel1.Size = new Size(161, 753);
             panel1.TabIndex = 10;
             // 
             // btnVolverMenu
             // 
             btnVolverMenu.Dock = DockStyle.Top;
             btnVolverMenu.FlatStyle = FlatStyle.Flat;
+            btnVolverMenu.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnVolverMenu.ForeColor = Color.White;
             btnVolverMenu.Image = Properties.Resources.paneles;
             btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
@@ -120,26 +117,27 @@
             btnVolverMenu.Name = "btnVolverMenu";
             btnVolverMenu.Size = new Size(161, 43);
             btnVolverMenu.TabIndex = 10;
-            btnVolverMenu.Text = "Volver al Menu";
+            btnVolverMenu.Text = "Volver";
             btnVolverMenu.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.inventario;
-            pictureBox3.Location = new Point(12, 140);
+            pictureBox3.Location = new Point(6, 140);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(132, 117);
+            pictureBox3.Size = new Size(149, 169);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 12F);
             button1.Image = Properties.Resources.paneles;
             button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(426, 409);
+            button1.Location = new Point(635, 162);
             button1.Name = "button1";
-            button1.Size = new Size(192, 29);
+            button1.Size = new Size(115, 36);
             button1.TabIndex = 11;
             button1.Text = "BUSCAR";
             button1.UseVisualStyleBackColor = true;
@@ -154,16 +152,26 @@
             pictureBox4.TabIndex = 45;
             pictureBox4.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(179, 63);
+            label2.Name = "label2";
+            label2.Size = new Size(506, 50);
+            label2.TabIndex = 47;
+            label2.Text = "INVENTARIO DE DESCARGA";
+            // 
             // frmInventarioLlegada
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1422, 753);
+            Controls.Add(label2);
             Controls.Add(pictureBox4);
             Controls.Add(button1);
             Controls.Add(panel1);
-            Controls.Add(txtInformacion);
             Controls.Add(txtNombre);
             Controls.Add(txtFecha);
             Controls.Add(pictureBox1);
@@ -187,11 +195,11 @@
         private PictureBox pictureBox1;
         private TextBox txtFecha;
         private TextBox txtNombre;
-        private TextBox txtInformacion;
         private Panel panel1;
         private PictureBox pictureBox3;
         private Button button1;
         private Button btnVolverMenu;
         private PictureBox pictureBox4;
+        private Label label2;
     }
 }

@@ -15,6 +15,10 @@ namespace Paqueteria.UI
         public frmAgregarPaquetes()
         {
             InitializeComponent();
+            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void txtId_Enter(object sender, EventArgs e)
@@ -32,42 +36,6 @@ namespace Paqueteria.UI
             {
                 txtId.Text = "ID";
                 txtId.ForeColor = Color.Gray;
-            }
-        }
-
-        private void txtFecha_Enter(object sender, EventArgs e)
-        {
-            if (txtFecha.Text == "FECHA")
-            {
-                txtFecha.Text = "";
-                txtFecha.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtFecha_Leave(object sender, EventArgs e)
-        {
-            if (txtFecha.Text == "")
-            {
-                txtFecha.Text = "FECHA";
-                txtFecha.ForeColor = Color.Gray;
-            }
-        }
-
-        private void txtUbicacion_Enter(object sender, EventArgs e)
-        {
-            if (txtUbicacion.Text == "UBICACIÓN")
-            {
-                txtUbicacion.Text = "";
-                txtUbicacion.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtUbicacion_Leave(object sender, EventArgs e)
-        {
-            if (txtUbicacion.Text == "")
-            {
-                txtUbicacion.Text = "UBICACIÓN";
-                txtUbicacion.ForeColor = Color.Gray;
             }
         }
 
