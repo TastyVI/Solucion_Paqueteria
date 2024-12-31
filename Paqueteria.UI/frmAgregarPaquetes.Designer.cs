@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            btnEliminar = new Button();
             btnAgregar = new Button();
             dataGridView1 = new DataGridView();
             txtId = new TextBox();
@@ -38,11 +37,11 @@
             btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            monthCalendar1 = new MonthCalendar();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             label2 = new Label();
             label3 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel4.SuspendLayout();
@@ -60,22 +59,11 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // btnEliminar
-            // 
-            btnEliminar.Image = Properties.Resources.paneles;
-            btnEliminar.ImageAlign = ContentAlignment.TopCenter;
-            btnEliminar.Location = new Point(423, 653);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(152, 64);
-            btnEliminar.TabIndex = 10;
-            btnEliminar.Text = "ELIMINAR";
-            btnEliminar.UseVisualStyleBackColor = true;
-            // 
             // btnAgregar
             // 
             btnAgregar.Image = Properties.Resources.paneles;
             btnAgregar.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregar.Location = new Point(235, 653);
+            btnAgregar.Location = new Point(314, 482);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(152, 64);
             btnAgregar.TabIndex = 9;
@@ -100,9 +88,9 @@
             txtId.BorderStyle = BorderStyle.None;
             txtId.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtId.ForeColor = Color.Gray;
-            txtId.Location = new Point(252, 205);
+            txtId.Location = new Point(221, 222);
             txtId.Name = "txtId";
-            txtId.Size = new Size(312, 28);
+            txtId.Size = new Size(334, 28);
             txtId.TabIndex = 13;
             txtId.Text = "ID";
             txtId.Enter += txtId_Enter;
@@ -111,10 +99,10 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(252, 242);
+            panel1.Location = new Point(221, 259);
             panel1.Margin = new Padding(2, 1, 2, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(312, 1);
+            panel1.Size = new Size(334, 1);
             panel1.TabIndex = 14;
             // 
             // panel4
@@ -164,21 +152,14 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // monthCalendar1
-            // 
-            monthCalendar1.Location = new Point(252, 403);
-            monthCalendar1.Margin = new Padding(12, 11, 12, 11);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 46;
-            // 
             // comboBox1
             // 
             comboBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Inventario de Llegada", "Escaneo de Ruta" });
-            comboBox1.Location = new Point(252, 255);
+            comboBox1.Location = new Point(221, 272);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(312, 39);
+            comboBox1.Size = new Size(334, 39);
             comboBox1.TabIndex = 47;
             // 
             // comboBox2
@@ -186,9 +167,9 @@
             comboBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "Inventario de Llegada", "Escaneo de Ruta" });
-            comboBox2.Location = new Point(252, 320);
+            comboBox2.Location = new Point(221, 347);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(312, 39);
+            comboBox2.Size = new Size(334, 39);
             comboBox2.TabIndex = 48;
             // 
             // label2
@@ -211,23 +192,31 @@
             label3.TabIndex = 51;
             label3.Text = "Un Paquete";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(221, 415);
+            dateTimePicker1.MaxDate = new DateTime(2099, 12, 31, 0, 0, 0, 0);
+            dateTimePicker1.MinDate = new DateTime(2023, 1, 1, 0, 0, 0, 0);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(334, 30);
+            dateTimePicker1.TabIndex = 52;
+            // 
             // frmAgregarPaquetes
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 753);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
-            Controls.Add(monthCalendar1);
             Controls.Add(pictureBox4);
             Controls.Add(panel4);
             Controls.Add(panel1);
             Controls.Add(txtId);
             Controls.Add(dataGridView1);
-            Controls.Add(btnEliminar);
             Controls.Add(btnAgregar);
             Controls.Add(pictureBox1);
             Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -246,7 +235,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button btnEliminar;
         private Button btnAgregar;
         private DataGridView dataGridView1;
         private TextBox txtId;
@@ -255,10 +243,10 @@
         private PictureBox pictureBox3;
         private Button btnVolverMenu;
         private PictureBox pictureBox4;
-        private MonthCalendar monthCalendar1;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private Label label2;
         private Label label3;
+        private DateTimePicker dateTimePicker1;
     }
 }

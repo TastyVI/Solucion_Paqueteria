@@ -30,7 +30,6 @@
         {
             comboBox1 = new ComboBox();
             txtAgregar = new Button();
-            listBox2 = new ListBox();
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             panel1 = new Panel();
@@ -40,64 +39,61 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            dataGridView2 = new DataGridView();
+            label1 = new Label();
+            comboBox2 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // comboBox1
             // 
+            comboBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(169, 97);
+            comboBox1.Location = new Point(160, 106);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(158, 28);
+            comboBox1.Size = new Size(222, 39);
             comboBox1.TabIndex = 18;
-            comboBox1.Text = "Usuario Chofer";
+            comboBox1.Text = "USUARIO DRIVER";
             // 
             // txtAgregar
             // 
-            txtAgregar.Location = new Point(408, 399);
+            txtAgregar.Location = new Point(397, 156);
             txtAgregar.Name = "txtAgregar";
-            txtAgregar.Size = new Size(224, 29);
+            txtAgregar.Size = new Size(111, 42);
             txtAgregar.TabIndex = 17;
             txtAgregar.Text = "AGREGAR";
             txtAgregar.UseVisualStyleBackColor = true;
             // 
-            // listBox2
-            // 
-            listBox2.FormattingEnabled = true;
-            listBox2.Location = new Point(686, 62);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(150, 324);
-            listBox2.TabIndex = 16;
-            // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(169, 209);
+            listBox1.Location = new Point(169, 269);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 224);
+            listBox1.Size = new Size(188, 464);
             listBox1.TabIndex = 14;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(330, 131);
+            dataGridView1.Location = new Point(363, 209);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(350, 255);
+            dataGridView1.Size = new Size(711, 524);
             dataGridView1.TabIndex = 20;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(169, 183);
+            panel1.Location = new Point(169, 197);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(158, 1);
+            panel1.Size = new Size(188, 1);
             panel1.TabIndex = 22;
             // 
             // txtCantidad
@@ -106,11 +102,11 @@
             txtCantidad.BorderStyle = BorderStyle.None;
             txtCantidad.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCantidad.ForeColor = Color.Gray;
-            txtCantidad.Location = new Point(169, 151);
+            txtCantidad.Location = new Point(169, 165);
+            txtCantidad.MaxLength = 11;
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(158, 28);
+            txtCantidad.Size = new Size(188, 28);
             txtCantidad.TabIndex = 21;
-            txtCantidad.Text = "CANTIDAD";
             txtCantidad.Enter += txtCantidad_Enter;
             txtCantidad.Leave += txtCantidad_Leave;
             // 
@@ -122,7 +118,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(154, 469);
+            panel2.Size = new Size(154, 753);
             panel2.TabIndex = 23;
             // 
             // btnVolverMenu
@@ -142,9 +138,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.ruta;
-            pictureBox1.Location = new Point(12, 183);
+            pictureBox1.Location = new Point(3, 106);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 107);
+            pictureBox1.Size = new Size(148, 167);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -152,9 +148,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.logo;
-            pictureBox2.Location = new Point(387, 17);
+            pictureBox2.Location = new Point(573, 6);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(245, 101);
+            pictureBox2.Size = new Size(394, 198);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 24;
             pictureBox2.TabStop = false;
@@ -169,12 +165,44 @@
             pictureBox3.TabIndex = 45;
             pictureBox3.TabStop = false;
             // 
+            // dataGridView2
+            // 
+            dataGridView2.BackgroundColor = SystemColors.ActiveCaption;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(1097, 209);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(313, 524);
+            dataGridView2.TabIndex = 46;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(195, 223);
+            label1.Name = "label1";
+            label1.Size = new Size(132, 31);
+            label1.TabIndex = 47;
+            label1.Text = "CANTIDAD";
+            // 
+            // comboBox2
+            // 
+            comboBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(1129, 159);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(196, 39);
+            comboBox2.TabIndex = 48;
+            // 
             // frmRuta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(876, 469);
+            ClientSize = new Size(1422, 753);
+            Controls.Add(comboBox2);
+            Controls.Add(label1);
+            Controls.Add(dataGridView2);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
@@ -183,7 +211,6 @@
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Controls.Add(txtAgregar);
-            Controls.Add(listBox2);
             Controls.Add(listBox1);
             MaximizeBox = false;
             Name = "frmRuta";
@@ -193,6 +220,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -202,7 +230,6 @@
         private Button btnvolver;
         private ComboBox comboBox1;
         private Button txtAgregar;
-        private ListBox listBox2;
         private ListBox listBox1;
         private DataGridView dataGridView1;
         private Panel panel1;
@@ -212,5 +239,8 @@
         private Button btnVolverMenu;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private DataGridView dataGridView2;
+        private Label label1;
+        private ComboBox comboBox2;
     }
 }
