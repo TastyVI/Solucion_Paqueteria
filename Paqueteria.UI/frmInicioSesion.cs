@@ -75,12 +75,12 @@ namespace Paqueteria.UI
             if (aux == 0)
             {
                 txtContraseña.UseSystemPasswordChar = false;
-                pbVercontrasena.Image = Properties.Resources.camion;
+                pbVercontrasena.Image = Properties.Resources.ojo_abiert;
                 aux=1; 
             }
             else
             {
-                pbVercontrasena.Image = Properties.Resources.logo2;
+                pbVercontrasena.Image = Properties.Resources.ojo_cerrado;
                 txtContraseña.UseSystemPasswordChar = true;
                 aux = 0;
             }

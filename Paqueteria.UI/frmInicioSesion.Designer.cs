@@ -175,10 +175,10 @@
             // 
             // pbVercontrasena
             // 
-            pbVercontrasena.Image = Properties.Resources.logo2;
+            pbVercontrasena.Image = Properties.Resources.ojo_cerrado;
             pbVercontrasena.Location = new Point(862, 480);
             pbVercontrasena.Name = "pbVercontrasena";
-            pbVercontrasena.Size = new Size(42, 44);
+            pbVercontrasena.Size = new Size(37, 34);
             pbVercontrasena.SizeMode = PictureBoxSizeMode.StretchImage;
             pbVercontrasena.TabIndex = 49;
             pbVercontrasena.TabStop = false;
