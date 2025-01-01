@@ -28,6 +28,10 @@ namespace Paqueteria.UI
         public frmAgregarUsuario()
         {
             InitializeComponent();
+            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
 
             client = new FireSharp.FirebaseClient(config);
 
@@ -109,7 +113,7 @@ namespace Paqueteria.UI
             {
                 usuario = "Auxiliar";
             }
-            else 
+            else
             {
                 usuario = "Administrador";
             }
@@ -123,6 +127,11 @@ namespace Paqueteria.UI
             };
             FirebaseResponse response = client.Set("Usuario/" + uuid, registrarse);
             MessageBox.Show("Usuario registrado existosamente");
+
+        }
+
+        private void txtNombreCompleto_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

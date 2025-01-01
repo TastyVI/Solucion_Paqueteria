@@ -39,12 +39,14 @@
             pictureBox4 = new PictureBox();
             panel1 = new Panel();
             panel2 = new Panel();
+            pbVercontrasena = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbVercontrasena).BeginInit();
             SuspendLayout();
             // 
             // btnIniciarSesion
@@ -85,6 +87,7 @@
             txtContraseña.Font = new Font("Tahoma", 13.8F);
             txtContraseña.ForeColor = Color.Gray;
             txtContraseña.Location = new Point(467, 486);
+            txtContraseña.MaxLength = 20;
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(434, 28);
             txtContraseña.TabIndex = 2;
@@ -170,12 +173,24 @@
             panel2.Size = new Size(437, 1);
             panel2.TabIndex = 48;
             // 
+            // pbVercontrasena
+            // 
+            pbVercontrasena.Image = Properties.Resources.logo2;
+            pbVercontrasena.Location = new Point(862, 480);
+            pbVercontrasena.Name = "pbVercontrasena";
+            pbVercontrasena.Size = new Size(42, 44);
+            pbVercontrasena.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbVercontrasena.TabIndex = 49;
+            pbVercontrasena.TabStop = false;
+            pbVercontrasena.Click += pictureBox5_Click;
+            // 
             // frmInicioSesion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 754);
+            Controls.Add(pbVercontrasena);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panel4);
@@ -198,6 +213,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbVercontrasena).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -215,5 +231,6 @@
         private PictureBox pictureBox4;
         private Panel panel1;
         private Panel panel2;
+        private PictureBox pbVercontrasena;
     }
 }

@@ -1,7 +1,12 @@
+using System.Globalization;
+using System.Runtime.Intrinsics.X86;
+
 namespace Paqueteria.UI
 {
     public partial class frmInicioSesion : Form
     {
+
+        int aux = 0;
         public frmInicioSesion()
         {
             InitializeComponent();
@@ -64,6 +69,24 @@ namespace Paqueteria.UI
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (aux == 0)
+            {
+                txtContraseña.UseSystemPasswordChar = false;
+                pbVercontrasena.Image = Properties.Resources.camion;
+                aux=1; 
+            }
+            else
+            {
+                pbVercontrasena.Image = Properties.Resources.logo2;
+                txtContraseña.UseSystemPasswordChar = true;
+                aux = 0;
+            }
+            
+        }
+        
     }
 
 }

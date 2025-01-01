@@ -11,7 +11,7 @@ namespace Paqueteria.UI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmRuta());
+            Application.Run(new frmInicioSesion());
         }
     }
 }
