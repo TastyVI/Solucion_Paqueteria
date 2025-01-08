@@ -6,7 +6,7 @@ namespace Paqueteria.UI
     public partial class frmInicioSesion : Form
     {
 
-        int aux = 0;
+        Boolean aux;
         public frmInicioSesion()
         {
             InitializeComponent();
@@ -23,7 +23,8 @@ namespace Paqueteria.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmMenu menu = new frmMenu();
+            menu.Show();
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
@@ -52,6 +53,7 @@ namespace Paqueteria.UI
                 txtContraseña.Text = "";
                 txtContraseña.ForeColor = Color.Black;
                 txtContraseña.UseSystemPasswordChar = true;
+               aux=true;
             }
         }
 
@@ -61,7 +63,8 @@ namespace Paqueteria.UI
             {
                 txtContraseña.Text = "CONTRASEÑA";
                 txtContraseña.ForeColor = Color.Gray;
-                txtContraseña.UseSystemPasswordChar = false;
+                pbVercontrasena.Image = Properties.Resources.ojo_cerrado;
+                aux= false;
             }
         }
 
@@ -72,17 +75,19 @@ namespace Paqueteria.UI
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            if (aux == 0)
+
+            if (aux == true)
             {
                 txtContraseña.UseSystemPasswordChar = false;
                 pbVercontrasena.Image = Properties.Resources.ojo_abiert;
-                aux=1; 
+                aux = false;
+
             }
             else
             {
                 pbVercontrasena.Image = Properties.Resources.ojo_cerrado;
                 txtContraseña.UseSystemPasswordChar = true;
-                aux = 0;
+                aux = true;
             }
             
         }

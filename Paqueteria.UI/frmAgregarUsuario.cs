@@ -12,11 +12,13 @@ using FireSharp.Response;
 using FireSharp.Interfaces;
 
 using Microsoft.Win32;
+using Paqueteria.DLL;
 
 namespace Paqueteria.UI
 {
     public partial class frmAgregarUsuario : Form
     {
+        
 
         IFirebaseConfig config = new FirebaseConfig
         {
@@ -24,9 +26,10 @@ namespace Paqueteria.UI
             BasePath = "https://solucion-paqueteria-bc199-default-rtdb.firebaseio.com/"
         };
         IFirebaseClient client;
-
+        registrarse registrarse1;
         public frmAgregarUsuario()
         {
+            registrarse registrarse = new registrarse();
             InitializeComponent();
             this.ClientSize = new System.Drawing.Size(1440, 800);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -117,7 +120,7 @@ namespace Paqueteria.UI
             {
                 usuario = "Administrador";
             }
-            var registrarse = new Registrarse
+            var registrarse1 = new registrarse
             {
                 Usuario = txtNombreUsuario.Text,
                 Contrasena = txtContraseña.Text,
@@ -125,7 +128,7 @@ namespace Paqueteria.UI
                 Tipo_Usuario = usuario,
                 Id = uuid,
             };
-            FirebaseResponse response = client.Set("Usuario/" + uuid, registrarse);
+            FirebaseResponse response = client.Set("Usuario/" + uuid, registrarse1);
             MessageBox.Show("Usuario registrado existosamente");
 
         }

@@ -12,6 +12,7 @@ namespace Paqueteria.UI
 {
     public partial class frmAgregarPaquetes : Form
     {
+        frmMenu menu = new frmMenu();
         public frmAgregarPaquetes()
         {
             InitializeComponent();
@@ -19,6 +20,7 @@ namespace Paqueteria.UI
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
+            menu.Close();
         }
 
         private void txtId_Enter(object sender, EventArgs e)

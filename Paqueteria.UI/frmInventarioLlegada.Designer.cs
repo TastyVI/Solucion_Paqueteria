@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventarioLlegada));
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
@@ -49,125 +50,82 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(192, 214);
+            resources.ApplyResources(listBox1, "listBox1");
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(499, 504);
-            listBox1.TabIndex = 3;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.SteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(809, 192);
+            resources.ApplyResources(dataGridView1, "dataGridView1");
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(610, 490);
-            dataGridView1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(818, -71);
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(529, 257);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // txtFecha
             // 
-            txtFecha.Font = new Font("Segoe UI", 12F);
-            txtFecha.Location = new Point(445, 162);
+            resources.ApplyResources(txtFecha, "txtFecha");
             txtFecha.Name = "txtFecha";
             txtFecha.ReadOnly = true;
-            txtFecha.Size = new Size(150, 34);
-            txtFecha.TabIndex = 7;
-            txtFecha.Text = "FECHA";
             // 
             // txtNombre
             // 
-            txtNombre.Font = new Font("Segoe UI", 12F);
-            txtNombre.Location = new Point(192, 162);
+            resources.ApplyResources(txtNombre, "txtNombre");
             txtNombre.Name = "txtNombre";
             txtNombre.ReadOnly = true;
-            txtNombre.Size = new Size(227, 34);
-            txtNombre.TabIndex = 8;
-            txtNombre.Text = "NOMBRE";
             // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
             panel1.Controls.Add(btnVolverMenu);
             panel1.Controls.Add(pictureBox3);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
+            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
-            panel1.Size = new Size(161, 753);
-            panel1.TabIndex = 10;
             // 
             // btnVolverMenu
             // 
-            btnVolverMenu.Dock = DockStyle.Top;
-            btnVolverMenu.FlatStyle = FlatStyle.Flat;
-            btnVolverMenu.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            resources.ApplyResources(btnVolverMenu, "btnVolverMenu");
             btnVolverMenu.ForeColor = Color.White;
             btnVolverMenu.Image = Properties.Resources.paneles;
-            btnVolverMenu.ImageAlign = ContentAlignment.BottomRight;
-            btnVolverMenu.Location = new Point(0, 0);
             btnVolverMenu.Name = "btnVolverMenu";
-            btnVolverMenu.Size = new Size(161, 43);
-            btnVolverMenu.TabIndex = 10;
-            btnVolverMenu.Text = "Volver";
             btnVolverMenu.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.inventario;
-            pictureBox3.Location = new Point(6, 140);
+            resources.ApplyResources(pictureBox3, "pictureBox3");
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(149, 169);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 12F);
+            resources.ApplyResources(button1, "button1");
             button1.Image = Properties.Resources.paneles;
-            button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(635, 162);
             button1.Name = "button1";
-            button1.Size = new Size(115, 36);
-            button1.TabIndex = 11;
-            button1.Text = "BUSCAR";
             button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.LogoEmpresa;
-            pictureBox4.Location = new Point(179, 0);
+            resources.ApplyResources(pictureBox4, "pictureBox4");
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(56, 50);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 45;
             pictureBox4.TabStop = false;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(179, 63);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new Size(506, 50);
-            label2.TabIndex = 47;
-            label2.Text = "INVENTARIO DE DESCARGA";
             // 
             // frmInventarioLlegada
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1422, 753);
             Controls.Add(label2);
             Controls.Add(pictureBox4);
             Controls.Add(button1);
@@ -179,7 +137,6 @@
             Controls.Add(listBox1);
             MaximizeBox = false;
             Name = "frmInventarioLlegada";
-            Text = "frmInventarioLlegada";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);

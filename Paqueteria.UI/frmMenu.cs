@@ -21,5 +21,55 @@ namespace Paqueteria.UI
             this.StartPosition = FormStartPosition.CenterScreen;
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmAgregarPaquetes agregarPaquete = new frmAgregarPaquetes();
+            agregarPaquete.Show();
+            this.Close();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            frmPendientes pendiente = new frmPendientes();
+            pendiente.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmAgregarUsuario agregar_usuario = new frmAgregarUsuario();
+            agregar_usuario.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            frmInventarioLlegada inventario_llegada = new frmInventarioLlegada();
+            inventario_llegada.Show();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            frmAgregarDriver agregarDriver = new frmAgregarDriver();
+            agregarDriver.Show();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            frmRegistroPaqueteDevolucion devoluciones = new frmRegistroPaqueteDevolucion();
+            devoluciones.Show();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            frmEliminarInventario EliminarInventario = new frmEliminarInventario();
+            EliminarInventario.Show();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            frmRuta rutas = new frmRuta();
+            rutas.Show();
+            
+        }
     }
 }
