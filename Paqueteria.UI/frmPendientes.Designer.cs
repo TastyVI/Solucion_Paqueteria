@@ -36,7 +36,6 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
-            label1 = new Label();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panel1.SuspendLayout();
@@ -132,15 +131,6 @@
             pictureBox3.TabIndex = 45;
             pictureBox3.TabStop = false;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 46;
-            label1.Text = "label1";
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -158,7 +148,6 @@
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 753);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(listBox1);
@@ -186,7 +175,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
-        private Label label1;
         private Label label2;
     }
 }
