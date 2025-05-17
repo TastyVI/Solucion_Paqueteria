@@ -42,6 +42,7 @@
             label2 = new Label();
             label3 = new Label();
             dateTimePicker1 = new DateTimePicker();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel4.SuspendLayout();
@@ -63,7 +64,7 @@
             // 
             btnAgregar.Image = Properties.Resources.paneles;
             btnAgregar.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregar.Location = new Point(314, 482);
+            btnAgregar.Location = new Point(221, 491);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(152, 64);
             btnAgregar.TabIndex = 9;
@@ -143,10 +144,10 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.LogoEmpresa;
-            pictureBox4.Location = new Point(221, 12);
+            pictureBox4.Image = Properties.Resources.logo22;
+            pictureBox4.Location = new Point(173, 0);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(62, 49);
+            pictureBox4.Size = new Size(147, 128);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 45;
             pictureBox4.TabStop = false;
@@ -201,24 +202,36 @@
             dateTimePicker1.Size = new Size(334, 30);
             dateTimePicker1.TabIndex = 52;
             // 
+            // button1
+            // 
+            button1.Image = Properties.Resources.paneles;
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(403, 491);
+            button1.Name = "button1";
+            button1.Size = new Size(152, 64);
+            button1.TabIndex = 53;
+            button1.Text = "ELIMINAR";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // frmAgregarPaquetes
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 753);
+            Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
-            Controls.Add(pictureBox4);
             Controls.Add(panel4);
             Controls.Add(panel1);
             Controls.Add(txtId);
             Controls.Add(dataGridView1);
             Controls.Add(btnAgregar);
             Controls.Add(pictureBox1);
+            Controls.Add(pictureBox4);
             Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             MaximizeBox = false;
             Name = "frmAgregarPaquetes";
@@ -248,5 +261,6 @@
         private Label label2;
         private Label label3;
         private DateTimePicker dateTimePicker1;
+        private Button button1;
     }
 }

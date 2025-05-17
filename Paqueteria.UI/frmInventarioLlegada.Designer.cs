@@ -49,21 +49,21 @@
             // 
             // listBox1
             // 
-            listBox1.FormattingEnabled = true;
             resources.ApplyResources(listBox1, "listBox1");
+            listBox1.FormattingEnabled = true;
             listBox1.Name = "listBox1";
             // 
             // dataGridView1
             // 
+            resources.ApplyResources(dataGridView1, "dataGridView1");
             dataGridView1.BackgroundColor = Color.SteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(dataGridView1, "dataGridView1");
             dataGridView1.Name = "dataGridView1";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.logo;
             resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Image = Properties.Resources.logo;
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
@@ -81,10 +81,10 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = Color.SteelBlue;
             panel1.Controls.Add(btnVolverMenu);
             panel1.Controls.Add(pictureBox3);
-            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
             // 
             // btnVolverMenu
@@ -97,8 +97,8 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.inventario;
             resources.ApplyResources(pictureBox3, "pictureBox3");
+            pictureBox3.Image = Properties.Resources.inventario;
             pictureBox3.Name = "pictureBox3";
             pictureBox3.TabStop = false;
             // 
@@ -111,8 +111,8 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.LogoEmpresa;
             resources.ApplyResources(pictureBox4, "pictureBox4");
+            pictureBox4.Image = Properties.Resources.logo22;
             pictureBox4.Name = "pictureBox4";
             pictureBox4.TabStop = false;
             // 

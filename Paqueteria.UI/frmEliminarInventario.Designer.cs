@@ -80,10 +80,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.LogoEmpresa;
-            pictureBox2.Location = new Point(192, 12);
+            pictureBox2.Image = Properties.Resources.logo22;
+            pictureBox2.Location = new Point(169, -13);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(49, 49);
+            pictureBox2.Size = new Size(190, 154);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 44;
             pictureBox2.TabStop = false;

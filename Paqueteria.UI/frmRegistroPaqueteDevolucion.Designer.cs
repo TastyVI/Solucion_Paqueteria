@@ -137,10 +137,10 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.LogoEmpresa;
-            pictureBox3.Location = new Point(1374, 0);
+            pictureBox3.Image = Properties.Resources.logo22;
+            pictureBox3.Location = new Point(1283, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(46, 47);
+            pictureBox3.Size = new Size(137, 125);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 45;
             pictureBox3.TabStop = false;
@@ -174,13 +174,13 @@
             ClientSize = new Size(1422, 753);
             Controls.Add(cmbMotivo);
             Controls.Add(Ltbpendientes);
-            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(txtMotivo);
             Controls.Add(lblListaPaquetes);
             Controls.Add(btnGuardar);
+            Controls.Add(pictureBox3);
             MaximizeBox = false;
             Name = "frmRegistroPaqueteDevolucion";
             Text = "frmRegistroPaqueteDevolucion";

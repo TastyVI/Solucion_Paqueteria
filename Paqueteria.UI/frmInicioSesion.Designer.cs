@@ -128,10 +128,10 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.LogoEmpresa;
-            pictureBox3.Location = new Point(203, 12);
+            pictureBox3.Image = Properties.Resources.logo22;
+            pictureBox3.Location = new Point(194, -3);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(63, 61);
+            pictureBox3.Size = new Size(146, 128);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 45;
             pictureBox3.TabStop = false;
