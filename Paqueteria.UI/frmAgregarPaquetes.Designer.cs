@@ -89,7 +89,7 @@
             txtId.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtId.ForeColor = Color.Gray;
             txtId.Location = new Point(221, 332);
-            txtId.MaxLength = 10;
+            txtId.MaxLength = 11;
             txtId.Name = "txtId";
             txtId.Size = new Size(334, 28);
             txtId.TabIndex = 13;

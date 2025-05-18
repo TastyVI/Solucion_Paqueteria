@@ -229,7 +229,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1534, 753);
+            ClientSize = new Size(1540, 753);
             Controls.Add(checkBox2);
             Controls.Add(checkBox1);
             Controls.Add(comboBox2);

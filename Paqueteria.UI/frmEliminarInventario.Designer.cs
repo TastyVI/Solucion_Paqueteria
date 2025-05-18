@@ -64,7 +64,7 @@
             txtBuscarPaquete.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtBuscarPaquete.ForeColor = Color.Gray;
             txtBuscarPaquete.Location = new Point(218, 227);
-            txtBuscarPaquete.MaxLength = 10;
+            txtBuscarPaquete.MaxLength = 11;
             txtBuscarPaquete.Name = "txtBuscarPaquete";
             txtBuscarPaquete.Size = new Size(226, 31);
             txtBuscarPaquete.TabIndex = 46;

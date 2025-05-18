@@ -86,6 +86,7 @@
             txtMotivo.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMotivo.ForeColor = Color.Gray;
             txtMotivo.Location = new Point(210, 262);
+            txtMotivo.MaxLength = 11;
             txtMotivo.Name = "txtMotivo";
             txtMotivo.Size = new Size(232, 28);
             txtMotivo.TabIndex = 21;

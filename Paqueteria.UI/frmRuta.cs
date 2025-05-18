@@ -15,7 +15,7 @@ namespace Paqueteria.UI
         public frmRuta()
         {
             InitializeComponent();
-            this.ClientSize = new System.Drawing.Size(1440, 800);
+            this.ClientSize = new System.Drawing.Size(1558, 800);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
