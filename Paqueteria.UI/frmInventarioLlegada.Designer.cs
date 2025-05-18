@@ -196,6 +196,7 @@
             btnVolverMenu.TabIndex = 10;
             btnVolverMenu.Text = "Volver";
             btnVolverMenu.UseVisualStyleBackColor = true;
+            btnVolverMenu.Click += btnVolverMenu_Click;
             // 
             // pictureBox3
             // 
@@ -249,7 +250,7 @@
             dataGridView1.Size = new Size(1167, 278);
             dataGridView1.TabIndex = 72;
             // 
-            // frmInventarioLlegada1
+            // frmInventarioLlegada
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -271,7 +272,7 @@
             Controls.Add(txtFecha);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
-            Name = "frmInventarioLlegada1";
+            Name = "frmInventarioLlegada";
             Text = "frmInventarioLlegada1";
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel1.ResumeLayout(false);

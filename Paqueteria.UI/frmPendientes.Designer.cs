@@ -59,6 +59,7 @@
             btnVolverMenu.TabIndex = 9;
             btnVolverMenu.Text = "Volver";
             btnVolverMenu.UseVisualStyleBackColor = true;
+            btnVolverMenu.Click += btnVolverMenu_Click;
             // 
             // button1
             // 

@@ -20,7 +20,6 @@ namespace Paqueteria.UI
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
-            menu.Close();
         }
 
         private void txtId_Enter(object sender, EventArgs e)
@@ -44,6 +43,11 @@ namespace Paqueteria.UI
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            menu.ShowDialog();
         }
     }
 }

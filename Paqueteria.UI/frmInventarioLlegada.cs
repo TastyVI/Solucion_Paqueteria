@@ -20,5 +20,11 @@ namespace Paqueteria.UI
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.ShowDialog();
+        }
     }
 }

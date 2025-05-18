@@ -44,5 +44,11 @@ namespace Paqueteria.UI
                 txtMotivo.ForeColor = Color.Gray;
             }
         }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.ShowDialog();
+        }
     }
 }

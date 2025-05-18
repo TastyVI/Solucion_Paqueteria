@@ -200,6 +200,7 @@
             btnVolverMenu.TabIndex = 29;
             btnVolverMenu.Text = "Volver";
             btnVolverMenu.UseVisualStyleBackColor = true;
+            btnVolverMenu.Click += btnVolverMenu_Click;
             // 
             // pictureBox3
             // 

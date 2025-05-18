@@ -82,5 +82,11 @@ namespace Paqueteria.UI
         {
 
         }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            menu.ShowDialog();
+        }
     }
 }

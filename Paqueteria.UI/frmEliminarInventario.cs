@@ -38,5 +38,11 @@ namespace Paqueteria.UI
                 txtBuscarPaquete.ForeColor = Color.Gray;
             }
         }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            menu.ShowDialog();
+        }
     }
 }

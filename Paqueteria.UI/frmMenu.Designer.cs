@@ -46,6 +46,7 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
+            label9 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -61,6 +62,7 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(label9);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -254,6 +256,18 @@
             label8.TabIndex = 74;
             label8.Text = "Inventario de Llegada";
             // 
+            // label9
+            // 
+            label9.BackColor = Color.White;
+            label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(1312, 27);
+            label9.Name = "label9";
+            label9.Size = new Size(82, 53);
+            label9.TabIndex = 51;
+            label9.Text = "CERRAR SESION";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Click += label9_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -314,5 +328,6 @@
         private Label label6;
         private Label label7;
         private Label label8;
+        private Label label9;
     }
 }

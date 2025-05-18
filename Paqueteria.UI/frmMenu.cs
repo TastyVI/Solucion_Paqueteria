@@ -69,7 +69,13 @@ namespace Paqueteria.UI
         {
             frmRuta rutas = new frmRuta();
             rutas.Show();
-            
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            frmInicioSesion frmInicioSesion = new frmInicioSesion();
+            frmInicioSesion.Show();
         }
     }
 }

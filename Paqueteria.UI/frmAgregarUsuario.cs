@@ -18,7 +18,7 @@ namespace Paqueteria.UI
 {
     public partial class frmAgregarUsuario : Form
     {
-        
+
 
         IFirebaseConfig config = new FirebaseConfig
         {
@@ -136,6 +136,12 @@ namespace Paqueteria.UI
         private void txtNombreCompleto_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            menu.ShowDialog();
         }
     }
 }
