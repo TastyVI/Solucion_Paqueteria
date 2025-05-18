@@ -37,20 +37,24 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            Ltbpendientes = new ListBox();
             cmbMotivo = new ComboBox();
+            dataGridView1 = new DataGridView();
+            dataGridView2 = new DataGridView();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // lblListaPaquetes
             // 
             lblListaPaquetes.AutoSize = true;
-            lblListaPaquetes.Location = new Point(1062, 105);
+            lblListaPaquetes.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblListaPaquetes.Location = new Point(905, 255);
             lblListaPaquetes.Name = "lblListaPaquetes";
-            lblListaPaquetes.Size = new Size(228, 20);
+            lblListaPaquetes.Size = new Size(437, 38);
             lblListaPaquetes.TabIndex = 13;
             lblListaPaquetes.Text = "Lista de paquetes de días anterio";
             // 
@@ -59,7 +63,7 @@
             btnGuardar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnGuardar.Image = Properties.Resources.paneles;
             btnGuardar.ImageAlign = ContentAlignment.TopCenter;
-            btnGuardar.Location = new Point(429, 599);
+            btnGuardar.Location = new Point(389, 587);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(191, 50);
             btnGuardar.TabIndex = 11;
@@ -69,10 +73,10 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(247, 281);
+            panel1.Location = new Point(210, 294);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(189, 1);
+            panel1.Size = new Size(232, 1);
             panel1.TabIndex = 22;
             // 
             // txtMotivo
@@ -81,9 +85,9 @@
             txtMotivo.BorderStyle = BorderStyle.None;
             txtMotivo.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMotivo.ForeColor = Color.Gray;
-            txtMotivo.Location = new Point(247, 249);
+            txtMotivo.Location = new Point(210, 262);
             txtMotivo.Name = "txtMotivo";
-            txtMotivo.Size = new Size(189, 28);
+            txtMotivo.Size = new Size(232, 28);
             txtMotivo.TabIndex = 21;
             txtMotivo.Text = "ID";
             txtMotivo.Enter += txtMotivo_Enter;
@@ -145,15 +149,6 @@
             pictureBox3.TabIndex = 45;
             pictureBox3.TabStop = false;
             // 
-            // Ltbpendientes
-            // 
-            Ltbpendientes.FormattingEnabled = true;
-            Ltbpendientes.Items.AddRange(new object[] { "" });
-            Ltbpendientes.Location = new Point(247, 309);
-            Ltbpendientes.Name = "Ltbpendientes";
-            Ltbpendientes.Size = new Size(514, 244);
-            Ltbpendientes.TabIndex = 46;
-            // 
             // cmbMotivo
             // 
             cmbMotivo.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -166,14 +161,33 @@
             cmbMotivo.TabIndex = 47;
             cmbMotivo.Text = "--------Motivo--------";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(210, 326);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(580, 228);
+            dataGridView1.TabIndex = 48;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(871, 325);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(539, 229);
+            dataGridView2.TabIndex = 49;
+            // 
             // frmRegistroPaqueteDevolucion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 753);
+            Controls.Add(dataGridView2);
+            Controls.Add(dataGridView1);
             Controls.Add(cmbMotivo);
-            Controls.Add(Ltbpendientes);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -188,6 +202,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -202,7 +218,8 @@
         private PictureBox pictureBox2;
         private Button btnVolverMenu;
         private PictureBox pictureBox3;
-        private ListBox Ltbpendientes;
         private ComboBox cmbMotivo;
+        private DataGridView dataGridView1;
+        private DataGridView dataGridView2;
     }
 }

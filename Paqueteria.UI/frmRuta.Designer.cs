@@ -42,6 +42,8 @@
             dataGridView2 = new DataGridView();
             label1 = new Label();
             comboBox2 = new ComboBox();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -62,7 +64,7 @@
             // 
             // txtAgregar
             // 
-            txtAgregar.Location = new Point(397, 156);
+            txtAgregar.Location = new Point(431, 156);
             txtAgregar.Name = "txtAgregar";
             txtAgregar.Size = new Size(111, 42);
             txtAgregar.TabIndex = 17;
@@ -71,20 +73,22 @@
             // 
             // listBox1
             // 
+            listBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 28;
             listBox1.Location = new Point(169, 269);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(188, 464);
+            listBox1.Size = new Size(188, 452);
             listBox1.TabIndex = 14;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(363, 209);
+            dataGridView1.Location = new Point(397, 210);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(711, 524);
+            dataGridView1.Size = new Size(784, 524);
             dataGridView1.TabIndex = 20;
             // 
             // panel1
@@ -148,9 +152,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.logo;
-            pictureBox2.Location = new Point(573, 6);
+            pictureBox2.Location = new Point(678, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(394, 198);
+            pictureBox2.Size = new Size(394, 154);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 24;
             pictureBox2.TabStop = false;
@@ -167,10 +171,12 @@
             // 
             // dataGridView2
             // 
+            dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(1097, 209);
+            dataGridView2.Location = new Point(1209, 217);
             dataGridView2.Name = "dataGridView2";
+            dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(313, 524);
             dataGridView2.TabIndex = 46;
@@ -189,17 +195,43 @@
             // 
             comboBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(1129, 159);
+            comboBox2.Items.AddRange(new object[] { "COYOACO", "LIBRES", "SAN MIGUEL", "HUEYTAMALCO", "CUETZALAN", "ZACAPOAXTLA", "ZARAGOZA", "TLATLAUQUITEPEC", "ATEMPAN", "TETELES", "TEZIUTLAN", "ALTOTONGA", "ATZALAN", "JALAZINGO", "XIUTETELCO", "CHIGNAUTLA" });
+            comboBox2.Location = new Point(1209, 160);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(196, 39);
+            comboBox2.Size = new Size(313, 39);
             comboBox2.TabIndex = 48;
+            comboBox2.Text = "VER POR CIUDAD";
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
+            checkBox1.Location = new Point(1192, 105);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(165, 29);
+            checkBox1.TabIndex = 49;
+            checkBox1.Text = "PRECIO MENOR";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
+            checkBox2.Location = new Point(1363, 105);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(163, 29);
+            checkBox2.TabIndex = 50;
+            checkBox2.Text = "PRECIO MAYOR";
+            checkBox2.UseVisualStyleBackColor = true;
             // 
             // frmRuta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1422, 753);
+            ClientSize = new Size(1534, 753);
+            Controls.Add(checkBox2);
+            Controls.Add(checkBox1);
             Controls.Add(comboBox2);
             Controls.Add(label1);
             Controls.Add(dataGridView2);
@@ -242,5 +274,7 @@
         private DataGridView dataGridView2;
         private Label label1;
         private ComboBox comboBox2;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
     }
 }

@@ -44,6 +44,7 @@
             panel5 = new Panel();
             panel6 = new Panel();
             label2 = new Label();
+            btnEliminar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -65,7 +66,7 @@
             btnAgregar.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregar.Image = Properties.Resources.paneles;
             btnAgregar.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregar.Location = new Point(325, 576);
+            btnAgregar.Location = new Point(264, 560);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(159, 60);
             btnAgregar.TabIndex = 38;
@@ -115,6 +116,7 @@
             txtTipoDeUnidad.Font = new Font("Microsoft Sans Serif", 18F);
             txtTipoDeUnidad.ForeColor = Color.Gray;
             txtTipoDeUnidad.Location = new Point(276, 479);
+            txtTipoDeUnidad.MaxLength = 300;
             txtTipoDeUnidad.Name = "txtTipoDeUnidad";
             txtTipoDeUnidad.Size = new Size(315, 34);
             txtTipoDeUnidad.TabIndex = 36;
@@ -129,6 +131,7 @@
             txtUsuario.Font = new Font("Microsoft Sans Serif", 18F);
             txtUsuario.ForeColor = Color.Gray;
             txtUsuario.Location = new Point(276, 406);
+            txtUsuario.MaxLength = 300;
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(315, 34);
             txtUsuario.TabIndex = 35;
@@ -173,6 +176,7 @@
             txtNombreCompleto.Font = new Font("Microsoft Sans Serif", 18F);
             txtNombreCompleto.ForeColor = Color.Gray;
             txtNombreCompleto.Location = new Point(276, 331);
+            txtNombreCompleto.MaxLength = 300;
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.Size = new Size(315, 34);
             txtNombreCompleto.TabIndex = 31;
@@ -228,12 +232,25 @@
             label2.TabIndex = 42;
             label2.Text = "Usuarios Existentes";
             // 
+            // btnEliminar
+            // 
+            btnEliminar.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminar.Image = Properties.Resources.paneles;
+            btnEliminar.ImageAlign = ContentAlignment.TopCenter;
+            btnEliminar.Location = new Point(458, 560);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(159, 60);
+            btnEliminar.TabIndex = 43;
+            btnEliminar.Text = "ELIMINAR";
+            btnEliminar.UseVisualStyleBackColor = true;
+            // 
             // frmAgregarDriver
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 753);
+            Controls.Add(btnEliminar);
             Controls.Add(label2);
             Controls.Add(panel6);
             Controls.Add(panel5);
@@ -278,5 +295,6 @@
         private Panel panel5;
         private Panel panel6;
         private Label label2;
+        private Button btnEliminar;
     }
 }

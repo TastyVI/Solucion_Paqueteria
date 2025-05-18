@@ -118,16 +118,150 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 504</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1167, 278</value>
+  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>809, -61</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>529, 247</value>
   </data>
+  <data name="txtFecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 34</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 794</value>
+  </data>
   <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1303, 0</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 126</value>
+  </data>
+  <data name="txtId.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtId.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 183</value>
+  </data>
+  <data name="txtId.Text" xml:space="preserve">
+    <value>ejemplo: 44551466720</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 25</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>ID DEL PAQUETE</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 11pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 250</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 25</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>VALOR</value>
+  </data>
+  <data name="txtValor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="txtValor.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtValor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 183</value>
+  </data>
+  <data name="txtValor.Text" xml:space="preserve">
+    <value>ejemplo: 1500</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 247</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 28</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>CIUDAD / ESTADO</value>
+  </data>
+  <data name="txtCiudad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="txtCiudad.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtCiudad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 183</value>
+  </data>
+  <data name="txtCiudad.Text" xml:space="preserve">
+    <value>ejemplo: Teziutlan</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>863, 245</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 25</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>BARRIO/COLONIA</value>
+  </data>
+  <data name="txtBarrio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="txtBarrio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>832, 282</value>
+  </data>
+  <data name="txtBarrio.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtBarrio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 183</value>
+  </data>
+  <data name="txtBarrio.Text" xml:space="preserve">
+    <value>ejemplo: Ahuateno</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1422, 794</value>
   </data>
 </root>

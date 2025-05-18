@@ -30,7 +30,7 @@
         {
             pictureBox1 = new PictureBox();
             btnAgregar = new Button();
-            button2 = new Button();
+            btnEliminar = new Button();
             txtNombreUsuario = new TextBox();
             panel3 = new Panel();
             panel2 = new Panel();
@@ -77,17 +77,17 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // button2
+            // btnEliminar
             // 
-            button2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold);
-            button2.Image = Properties.Resources.paneles;
-            button2.ImageAlign = ContentAlignment.TopCenter;
-            button2.Location = new Point(453, 615);
-            button2.Name = "button2";
-            button2.Size = new Size(170, 47);
-            button2.TabIndex = 8;
-            button2.Text = "ELIMINAR";
-            button2.UseVisualStyleBackColor = true;
+            btnEliminar.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold);
+            btnEliminar.Image = Properties.Resources.paneles;
+            btnEliminar.ImageAlign = ContentAlignment.TopCenter;
+            btnEliminar.Location = new Point(453, 615);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(170, 47);
+            btnEliminar.TabIndex = 8;
+            btnEliminar.Text = "ELIMINAR";
+            btnEliminar.UseVisualStyleBackColor = true;
             // 
             // txtNombreUsuario
             // 
@@ -96,6 +96,7 @@
             txtNombreUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtNombreUsuario.ForeColor = Color.Gray;
             txtNombreUsuario.Location = new Point(253, 424);
+            txtNombreUsuario.MaxLength = 100;
             txtNombreUsuario.Name = "txtNombreUsuario";
             txtNombreUsuario.Size = new Size(338, 40);
             txtNombreUsuario.TabIndex = 23;
@@ -140,6 +141,7 @@
             txtNombreCompleto.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtNombreCompleto.ForeColor = Color.Gray;
             txtNombreCompleto.Location = new Point(253, 363);
+            txtNombreCompleto.MaxLength = 100;
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.Size = new Size(338, 40);
             txtNombreCompleto.TabIndex = 19;
@@ -165,6 +167,7 @@
             txtContraseña.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtContraseña.ForeColor = Color.Gray;
             txtContraseña.Location = new Point(248, 546);
+            txtContraseña.MaxLength = 100;
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(338, 40);
             txtContraseña.TabIndex = 25;
@@ -233,7 +236,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(985, 176);
+            dataGridView1.Location = new Point(1019, 203);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(373, 519);
@@ -278,7 +281,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(txtNombreCompleto);
-            Controls.Add(button2);
+            Controls.Add(btnEliminar);
             Controls.Add(btnAgregar);
             Controls.Add(pictureBox1);
             MaximizeBox = false;
@@ -298,7 +301,7 @@
 
         private PictureBox pictureBox1;
         private Button btnAgregar;
-        private Button button2;
+        private Button btnEliminar;
         private TextBox txtNombreUsuario;
         private Panel panel3;
         private Panel panel2;

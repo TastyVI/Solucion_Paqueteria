@@ -34,23 +34,24 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             btnEliminar = new Button();
-            listBox1 = new ListBox();
             panel5 = new Panel();
             btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
             label1 = new Label();
             listBox2 = new ListBox();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
             panel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            panel1.Location = new Point(218, 240);
+            panel1.Location = new Point(218, 272);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
             panel1.Size = new Size(226, 1);
@@ -62,18 +63,19 @@
             txtBuscarPaquete.BorderStyle = BorderStyle.None;
             txtBuscarPaquete.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtBuscarPaquete.ForeColor = Color.Gray;
-            txtBuscarPaquete.Location = new Point(218, 195);
+            txtBuscarPaquete.Location = new Point(218, 227);
+            txtBuscarPaquete.MaxLength = 10;
             txtBuscarPaquete.Name = "txtBuscarPaquete";
             txtBuscarPaquete.Size = new Size(226, 31);
             txtBuscarPaquete.TabIndex = 46;
-            txtBuscarPaquete.Text = "BUSCAR PAQUETE";
+            txtBuscarPaquete.Text = "BUSCAR ID PAQUETE";
             txtBuscarPaquete.Enter += txtBuscarPaquete_Enter;
             txtBuscarPaquete.Leave += txtBuscarPaquete_Leave;
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dateTimePicker1.Location = new Point(218, 255);
+            dateTimePicker1.Location = new Point(218, 287);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(390, 34);
             dateTimePicker1.TabIndex = 45;
@@ -103,20 +105,12 @@
             btnEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnEliminar.Image = Properties.Resources.paneles;
             btnEliminar.ImageAlign = ContentAlignment.TopCenter;
-            btnEliminar.Location = new Point(639, 251);
+            btnEliminar.Location = new Point(639, 283);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(145, 46);
             btnEliminar.TabIndex = 41;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(218, 318);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(566, 364);
-            listBox1.TabIndex = 40;
             // 
             // panel5
             // 
@@ -158,7 +152,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(209, 112);
+            label1.Location = new Point(209, 144);
             label1.Name = "label1";
             label1.Size = new Size(436, 54);
             label1.TabIndex = 48;
@@ -167,10 +161,19 @@
             // listBox2
             // 
             listBox2.FormattingEnabled = true;
-            listBox2.Location = new Point(871, 318);
+            listBox2.Location = new Point(939, 318);
             listBox2.Name = "listBox2";
             listBox2.Size = new Size(403, 364);
             listBox2.TabIndex = 49;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(209, 363);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(613, 319);
+            dataGridView1.TabIndex = 50;
             // 
             // frmEliminarInventario
             // 
@@ -178,6 +181,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1422, 753);
+            Controls.Add(dataGridView1);
             Controls.Add(listBox2);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -186,7 +190,6 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnEliminar);
-            Controls.Add(listBox1);
             Controls.Add(panel5);
             MaximizeBox = false;
             Name = "frmEliminarInventario";
@@ -195,6 +198,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -207,11 +211,11 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Button btnEliminar;
-        private ListBox listBox1;
         private Panel panel5;
         private Button btnVolverMenu;
         private PictureBox pictureBox3;
         private Label label1;
         private ListBox listBox2;
+        private DataGridView dataGridView1;
     }
 }

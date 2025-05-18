@@ -37,12 +37,11 @@
             btnVolverMenu = new Button();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            cmbAsignacion = new ComboBox();
             label2 = new Label();
             label3 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            button1 = new Button();
+            dtFecha = new DateTimePicker();
+            btnEliminar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel4.SuspendLayout();
@@ -53,9 +52,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(644, 12);
+            pictureBox1.Location = new Point(782, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(748, 306);
+            pictureBox1.Size = new Size(628, 231);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -64,7 +63,7 @@
             // 
             btnAgregar.Image = Properties.Resources.paneles;
             btnAgregar.ImageAlign = ContentAlignment.TopCenter;
-            btnAgregar.Location = new Point(221, 491);
+            btnAgregar.Location = new Point(221, 459);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(152, 64);
             btnAgregar.TabIndex = 9;
@@ -89,7 +88,8 @@
             txtId.BorderStyle = BorderStyle.None;
             txtId.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtId.ForeColor = Color.Gray;
-            txtId.Location = new Point(221, 222);
+            txtId.Location = new Point(221, 332);
+            txtId.MaxLength = 10;
             txtId.Name = "txtId";
             txtId.Size = new Size(334, 28);
             txtId.TabIndex = 13;
@@ -100,7 +100,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(221, 259);
+            panel1.Location = new Point(221, 369);
             panel1.Margin = new Padding(2, 1, 2, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(334, 1);
@@ -153,25 +153,16 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // comboBox1
+            // cmbAsignacion
             // 
-            comboBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Inventario de Llegada", "Escaneo de Ruta" });
-            comboBox1.Location = new Point(221, 272);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(334, 39);
-            comboBox1.TabIndex = 47;
-            // 
-            // comboBox2
-            // 
-            comboBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Inventario de Llegada", "Escaneo de Ruta" });
-            comboBox2.Location = new Point(221, 347);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(334, 39);
-            comboBox2.TabIndex = 48;
+            cmbAsignacion.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cmbAsignacion.FormattingEnabled = true;
+            cmbAsignacion.Items.AddRange(new object[] { "Inventario de Llegada", "Escaneo de Ruta" });
+            cmbAsignacion.Location = new Point(221, 272);
+            cmbAsignacion.Name = "cmbAsignacion";
+            cmbAsignacion.Size = new Size(334, 39);
+            cmbAsignacion.TabIndex = 47;
+            cmbAsignacion.Text = "SELECCION DE BUSQUEDA";
             // 
             // label2
             // 
@@ -193,25 +184,25 @@
             label3.TabIndex = 51;
             label3.Text = "Un Paquete";
             // 
-            // dateTimePicker1
+            // dtFecha
             // 
-            dateTimePicker1.Location = new Point(221, 415);
-            dateTimePicker1.MaxDate = new DateTime(2099, 12, 31, 0, 0, 0, 0);
-            dateTimePicker1.MinDate = new DateTime(2023, 1, 1, 0, 0, 0, 0);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(334, 30);
-            dateTimePicker1.TabIndex = 52;
+            dtFecha.Location = new Point(221, 390);
+            dtFecha.MaxDate = new DateTime(2099, 12, 31, 0, 0, 0, 0);
+            dtFecha.MinDate = new DateTime(2023, 1, 1, 0, 0, 0, 0);
+            dtFecha.Name = "dtFecha";
+            dtFecha.Size = new Size(334, 30);
+            dtFecha.TabIndex = 52;
             // 
-            // button1
+            // btnEliminar
             // 
-            button1.Image = Properties.Resources.paneles;
-            button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(403, 491);
-            button1.Name = "button1";
-            button1.Size = new Size(152, 64);
-            button1.TabIndex = 53;
-            button1.Text = "ELIMINAR";
-            button1.UseVisualStyleBackColor = true;
+            btnEliminar.Image = Properties.Resources.paneles;
+            btnEliminar.ImageAlign = ContentAlignment.TopCenter;
+            btnEliminar.Location = new Point(403, 459);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(152, 64);
+            btnEliminar.TabIndex = 53;
+            btnEliminar.Text = "ELIMINAR";
+            btnEliminar.UseVisualStyleBackColor = true;
             // 
             // frmAgregarPaquetes
             // 
@@ -219,12 +210,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1422, 753);
-            Controls.Add(button1);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(btnEliminar);
+            Controls.Add(dtFecha);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbAsignacion);
             Controls.Add(panel4);
             Controls.Add(panel1);
             Controls.Add(txtId);
@@ -256,11 +246,10 @@
         private PictureBox pictureBox3;
         private Button btnVolverMenu;
         private PictureBox pictureBox4;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cmbAsignacion;
         private Label label2;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
-        private Button button1;
+        private DateTimePicker dtFecha;
+        private Button btnEliminar;
     }
 }

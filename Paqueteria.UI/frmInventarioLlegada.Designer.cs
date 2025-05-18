@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventarioLlegada));
-            listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
             txtFecha = new TextBox();
@@ -40,18 +39,20 @@
             button1 = new Button();
             pictureBox4 = new PictureBox();
             label2 = new Label();
+            txtId = new TextBox();
+            label1 = new Label();
+            label3 = new Label();
+            txtValor = new TextBox();
+            label4 = new Label();
+            txtCiudad = new TextBox();
+            label5 = new Label();
+            txtBarrio = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
-            // 
-            // listBox1
-            // 
-            resources.ApplyResources(listBox1, "listBox1");
-            listBox1.FormattingEnabled = true;
-            listBox1.Name = "listBox1";
             // 
             // dataGridView1
             // 
@@ -121,11 +122,59 @@
             resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
             // 
+            // txtId
+            // 
+            resources.ApplyResources(txtId, "txtId");
+            txtId.Name = "txtId";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // txtValor
+            // 
+            resources.ApplyResources(txtValor, "txtValor");
+            txtValor.Name = "txtValor";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
+            // txtCiudad
+            // 
+            resources.ApplyResources(txtCiudad, "txtCiudad");
+            txtCiudad.Name = "txtCiudad";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
+            // 
+            // txtBarrio
+            // 
+            resources.ApplyResources(txtBarrio, "txtBarrio");
+            txtBarrio.Name = "txtBarrio";
+            // 
             // frmInventarioLlegada
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(label5);
+            Controls.Add(txtBarrio);
+            Controls.Add(label4);
+            Controls.Add(txtCiudad);
+            Controls.Add(label3);
+            Controls.Add(txtValor);
+            Controls.Add(label1);
+            Controls.Add(txtId);
             Controls.Add(label2);
             Controls.Add(pictureBox4);
             Controls.Add(button1);
@@ -134,7 +183,6 @@
             Controls.Add(txtFecha);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
-            Controls.Add(listBox1);
             MaximizeBox = false;
             Name = "frmInventarioLlegada";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -147,7 +195,6 @@
         }
 
         #endregion
-        private ListBox listBox1;
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
         private TextBox txtFecha;
@@ -158,5 +205,13 @@
         private Button btnVolverMenu;
         private PictureBox pictureBox4;
         private Label label2;
+        private TextBox txtId;
+        private Label label1;
+        private Label label3;
+        private TextBox txtValor;
+        private Label label4;
+        private TextBox txtCiudad;
+        private Label label5;
+        private TextBox txtBarrio;
     }
 }
