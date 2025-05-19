@@ -90,7 +90,7 @@
             txtMotivo.Name = "txtMotivo";
             txtMotivo.Size = new Size(232, 28);
             txtMotivo.TabIndex = 21;
-            txtMotivo.Text = "ID";
+            txtMotivo.Text = "ID PAQUETE";
             txtMotivo.Enter += txtMotivo_Enter;
             txtMotivo.Leave += txtMotivo_Leave;
             // 

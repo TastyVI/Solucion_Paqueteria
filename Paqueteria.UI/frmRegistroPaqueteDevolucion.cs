@@ -22,14 +22,11 @@ namespace Paqueteria.UI
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void txtMotivo_Enter(object sender, EventArgs e)
         {
-            if (txtMotivo.Text == "MOTIVO")
+            if (txtMotivo.Text == "ID PAQUETE")
             {
                 txtMotivo.Text = "";
                 txtMotivo.ForeColor = Color.Black;
@@ -40,7 +37,7 @@ namespace Paqueteria.UI
         {
             if (txtMotivo.Text == "")
             {
-                txtMotivo.Text = "MOTIVO";
+                txtMotivo.Text = "ID PAQUETE";
                 txtMotivo.ForeColor = Color.Gray;
             }
         }

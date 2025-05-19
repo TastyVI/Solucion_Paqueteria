@@ -26,7 +26,6 @@ namespace Paqueteria.UI
         {
             frmAgregarPaquetes agregarPaquete = new frmAgregarPaquetes();
             agregarPaquete.Show();
-            this.Dispose();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

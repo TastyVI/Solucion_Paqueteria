@@ -23,7 +23,7 @@ namespace Paqueteria.UI
 
         private void txtBuscarPaquete_Enter(object sender, EventArgs e)
         {
-            if (txtBuscarPaquete.Text == "BUSCAR PAQUETE")
+            if (txtBuscarPaquete.Text == "BUSCAR ID PAQUETE")
             {
                 txtBuscarPaquete.Text = "";
                 txtBuscarPaquete.ForeColor = Color.Black;
@@ -34,7 +34,7 @@ namespace Paqueteria.UI
         {
             if (txtBuscarPaquete.Text == "")
             {
-                txtBuscarPaquete.Text = "BUSCAR PAQUETE";
+                txtBuscarPaquete.Text = "BUSCAR ID PAQUETE";
                 txtBuscarPaquete.ForeColor = Color.Gray;
             }
         }

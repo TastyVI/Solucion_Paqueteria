@@ -23,19 +23,19 @@ namespace Paqueteria.UI
 
         private void txtCantidad_Enter(object sender, EventArgs e)
         {
-            if (txtCantidad.Text == "CANTIDAD")
+            if (txtID_ruta.Text == "ID")
             {
-                txtCantidad.Text = "";
-                txtCantidad.ForeColor = Color.Black;
+                txtID_ruta.Text = "";
+                txtID_ruta.ForeColor = Color.Black;
             }
         }
 
         private void txtCantidad_Leave(object sender, EventArgs e)
         {
-            if (txtCantidad.Text == "")
+            if (txtID_ruta.Text == "")
             {
-                txtCantidad.Text = "CANTIDAD";
-                txtCantidad.ForeColor = Color.Gray;
+                txtID_ruta.Text = "ID";
+                txtID_ruta.ForeColor = Color.Gray;
             }
         }
 

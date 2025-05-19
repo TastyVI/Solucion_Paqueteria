@@ -69,6 +69,7 @@
             txtUsuario.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsuario.ForeColor = Color.Gray;
             txtUsuario.Location = new Point(467, 404);
+            txtUsuario.MaxLength = 40;
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(437, 28);
             txtUsuario.TabIndex = 1;
@@ -176,9 +177,9 @@
             // pbVercontrasena
             // 
             pbVercontrasena.Image = Properties.Resources.ojo_cerrado;
-            pbVercontrasena.Location = new Point(862, 480);
+            pbVercontrasena.Location = new Point(855, 477);
             pbVercontrasena.Name = "pbVercontrasena";
-            pbVercontrasena.Size = new Size(37, 34);
+            pbVercontrasena.Size = new Size(49, 47);
             pbVercontrasena.SizeMode = PictureBoxSizeMode.StretchImage;
             pbVercontrasena.TabIndex = 49;
             pbVercontrasena.TabStop = false;

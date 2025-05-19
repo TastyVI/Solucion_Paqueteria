@@ -33,7 +33,7 @@
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
             panel1 = new Panel();
-            txtCantidad = new TextBox();
+            txtID_ruta = new TextBox();
             panel2 = new Panel();
             btnVolverMenu = new Button();
             pictureBox1 = new PictureBox();
@@ -100,19 +100,21 @@
             panel1.Size = new Size(188, 1);
             panel1.TabIndex = 22;
             // 
-            // txtCantidad
+            // txtID_ruta
             // 
-            txtCantidad.BackColor = SystemColors.ButtonHighlight;
-            txtCantidad.BorderStyle = BorderStyle.None;
-            txtCantidad.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCantidad.ForeColor = Color.Gray;
-            txtCantidad.Location = new Point(169, 165);
-            txtCantidad.MaxLength = 11;
-            txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(188, 28);
-            txtCantidad.TabIndex = 21;
-            txtCantidad.Enter += txtCantidad_Enter;
-            txtCantidad.Leave += txtCantidad_Leave;
+            txtID_ruta.BackColor = SystemColors.ButtonHighlight;
+            txtID_ruta.BorderStyle = BorderStyle.None;
+            txtID_ruta.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtID_ruta.ForeColor = Color.Gray;
+            txtID_ruta.Location = new Point(169, 165);
+            txtID_ruta.MaxLength = 11;
+            txtID_ruta.Name = "txtID_ruta";
+            txtID_ruta.Size = new Size(188, 28);
+            txtID_ruta.TabIndex = 21;
+            txtID_ruta.Text = "ID";
+            txtID_ruta.TextAlign = HorizontalAlignment.Center;
+            txtID_ruta.Enter += txtCantidad_Enter;
+            txtID_ruta.Leave += txtCantidad_Leave;
             // 
             // panel2
             // 
@@ -240,7 +242,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(txtCantidad);
+            Controls.Add(txtID_ruta);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Controls.Add(txtAgregar);
@@ -266,7 +268,7 @@
         private ListBox listBox1;
         private DataGridView dataGridView1;
         private Panel panel1;
-        private TextBox txtCantidad;
+        private TextBox txtID_ruta;
         private Panel panel2;
         private PictureBox pictureBox1;
         private Button btnVolverMenu;
