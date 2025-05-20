@@ -266,8 +266,10 @@
             Controls.Add(panel1);
             Controls.Add(txtNombreCompleto);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             Name = "frmAgregarDriver";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAgregarDriver";
             Load += frmAgregarDriver_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
