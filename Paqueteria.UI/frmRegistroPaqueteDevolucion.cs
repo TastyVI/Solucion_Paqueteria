@@ -45,7 +45,8 @@ namespace Paqueteria.UI
         private void btnVolverMenu_Click(object sender, EventArgs e)
         {
             frmMenu frmMenu = new frmMenu();
-            frmMenu.ShowDialog();
+            frmMenu.Show();
+            this.Close();
         }
     }
 }

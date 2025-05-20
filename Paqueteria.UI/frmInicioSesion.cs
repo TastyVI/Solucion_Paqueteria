@@ -13,6 +13,7 @@ namespace Paqueteria.UI
             this.ClientSize = new System.Drawing.Size(1440, 800);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
+            this.Size = this.ClientSize;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -25,6 +26,7 @@ namespace Paqueteria.UI
         {
             frmMenu menu = new frmMenu();
             menu.Show();
+            this.Close();
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
